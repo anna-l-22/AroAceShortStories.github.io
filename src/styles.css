@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: lavender; }
+
+
+.Fantasy {     
+    background-color: rgb(204, 168, 237);
+}
+.Romance {
+    background-color: rgb(241, 175, 210);
+}
+.Science-Fiction {
+    background-color: #bdfe5b;
+}
+.Horror {
+    background-color: #090504;
+    color: white;
+}
+.Contemporary {
+    background-color: rgb(235, 183, 147);
+}

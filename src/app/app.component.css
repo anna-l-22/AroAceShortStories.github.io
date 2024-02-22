@@ -1,0 +1,13 @@
+body {
+    padding: 20px;
+    background-color: lavender;
+}
+
+.title {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
