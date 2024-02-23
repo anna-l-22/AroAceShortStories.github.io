@@ -1,9 +1,10 @@
 <div *ngIf="story">
     <div class="card text-center details">
-    <h4>{{story.title}} - 
-        <button type="button" class="btn author">
-            <a [routerLink]="['../../list', {author}]">{{story.author.name}}</a>
-        </button></h4>
+        <div class="card-header">
+            <h2 class="card-title">{{story.title}} - 
+                <a [routerLink]="['../../list', {author}]" class="card-link">{{story.author.name}}</a>
+            </h2>
+        </div>
         
     <div *ngIf="source && story.link" class="row row-cols-1 row-cols-md-2 row-cols-lg-2 links">
         <div *ngIf="story.source">
