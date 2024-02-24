@@ -1,5 +1,5 @@
 <div *ngIf="story">
-    <div class="card text-center details">
+    <div class="card text-center details bg-secondary text-white">
         <div class="card-header">
             <h2 class="card-title">{{story.title}} - 
                 <a [routerLink]="['../../list', {author}]" class="card-link">{{story.author.name}}</a>
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="card description">
+    <div class="card description bg-dark text-white">
         <p>{{story.description}}</p>
     </div>
     <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5">

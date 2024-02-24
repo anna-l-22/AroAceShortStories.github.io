@@ -1,6 +1,7 @@
 import { Author } from "./author";
 import { DetailIdentity } from "./detail-identity";
 import { Genre } from "./genre";
+import { Series } from "./series";
 import { Source } from "./source";
 import { Warning } from "./warning";
 
@@ -14,4 +15,5 @@ export interface DetailStory {
     link?: string;    
     description: string;
     warning: Warning[];
+    series?: Series;
 }

@@ -21,6 +21,9 @@ import { DataRomantic } from './interfaces/data-structure/data-romantic';
 import { DataSexuality } from './interfaces/data-structure/data-sexuality';
 import { DataExplicit } from './interfaces/data-structure/data-explicit';
 import { GENDER } from './data/gender-data';
+import { SERIES } from './data/series-data';
+import { Series } from './interfaces/story-structure/series';
+import { Source } from './interfaces/story-structure/source';
 
 @Injectable({
   providedIn: 'root'
@@ -65,7 +68,7 @@ export class StoriesService {
   }
 
   private getRandomIds(): number[] {
-    const count = STORIES.length > 9 ? 9 : STORIES.length;
+    const count = STORIES.length > 100 ? 100 : STORIES.length;
     let randoms: number[] = [];
     let randomIds: number[] = [];
     while (randoms.length < count) {
@@ -124,7 +127,8 @@ export class StoriesService {
       link: story.link,
       identities: this.getDetailIdentities(story.identities),
       warning: this.getWarnings(story.warnings),
-      description: story.description
+      description: story.description,
+      series: { id: story.series, series: this.getSeries(story.series)}
     }
     return detailStory;
   }
@@ -135,6 +139,10 @@ export class StoriesService {
 
   private getSource(id?: number): string | undefined {
     return SOURCE.find(s => s.id == id)?.source ?? undefined;
+  }
+
+  private getSeries(id?: number): string | undefined {
+    return SERIES.find(s => s.id == id)?.series ?? undefined;
   }
 
   private getGenres(ids: number[]): Genre[] {
@@ -203,5 +211,10 @@ export class StoriesService {
 
   private getProminance(id: number): string {
     return PROMINANCE.find(p => p.id == id)?.prominance ?? "Unknown";
+  }
+
+  getSourceDetails(id: number | undefined) {
+    if (id === undefined) return {};
+    return SOURCE.find(s => s.id == id);
   }
 }

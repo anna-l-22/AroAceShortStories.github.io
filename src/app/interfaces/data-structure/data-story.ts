@@ -9,5 +9,6 @@ export interface DataStory {
     link?: string;
     identities: DataIdentity[];
     description: string;
-    warnings: number[]
+    warnings: number[];
+    series?: number;
 }

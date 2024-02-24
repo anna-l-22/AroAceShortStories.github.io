@@ -22,7 +22,8 @@ export class DetailItemComponent {
     identities: [],
     description: '',
     warning: [],
-    source: {id: 0, source: ''}
+    source: {id: 0, source: ''},
+    series: {id: 0, series: ''}
   };
   author: number = 0;
   source: number = 0;
