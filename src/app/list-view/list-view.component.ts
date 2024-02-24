@@ -48,7 +48,7 @@ export class ListViewComponent {
   searchStories(searchElements: DropdownSelects): void {
     this.stories = 
     this.storyService.getListStories(undefined, 
-      undefined, 
+      undefined, undefined,
       searchElements.selectedGenre, 
       searchElements.selectedRomantic, 
       searchElements.selectedSexuality, 

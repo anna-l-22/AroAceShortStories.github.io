@@ -1,6 +1,7 @@
 <mat-form-field>
     <mat-label>Genre</mat-label>
     <mat-select [(value)]="selectedGenre">
+        <mat-option>Select a genre</mat-option>
       <div *ngFor="let genre of genres">
         <mat-option [value]="genre.id">{{genre.genre}}</mat-option>
     </div>
@@ -9,6 +10,7 @@
 <mat-form-field>
     <mat-label>Romantic Orientation</mat-label>
     <mat-select [(value)]="selectedRomantic">
+    <mat-option>Select a romantic orientation</mat-option>
     <div *ngFor="let romantic of romantics">
         <mat-option [value]="romantic.id">{{romantic.romantic}}</mat-option>
     </div>
@@ -17,6 +19,7 @@
 <mat-form-field>
     <mat-label>Sexual Orientation</mat-label>
     <mat-select [(value)]="selectedSexuality">
+    <mat-option>Select a sexual orientation</mat-option>
     <div *ngFor="let sexuality of sexualitys">
         <mat-option [value]="sexuality.id">{{sexuality.sexuality}}</mat-option>
     </div>
@@ -25,6 +28,7 @@
 <mat-form-field>
     <mat-label>Explicitness</mat-label>
     <mat-select [(value)]="selectedExplicit">
+    <mat-option>Select a level of explicitness</mat-option>
     <div *ngFor="let explicit of explicits">
         <mat-option [value]="explicit.id">{{explicit.type}}</mat-option>
     </div>

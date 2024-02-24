@@ -6,6 +6,7 @@ export interface DataStory {
     author: number;
     source?: number;
     genres: number[];
+    intersectionalities: number[];
     link?: string;
     identities: DataIdentity[];
     description: string;
