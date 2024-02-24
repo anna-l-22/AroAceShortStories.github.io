@@ -3,6 +3,7 @@
          characters in them.</p>
     <p>Use the drop down menus to filter for elements that interest you. Click the random shuffle to get a new set of stories. 
         Click through on a story to get more details and find out what else the author has written.</p>
+    <p>Know of a story we've missed? Submit it to aroaceshortstories@outlook.com</p>
 </div>
 <button class="btn btn-secondary" (click)="getListStories(author, source)">Random Shuffle</button>
 <div>
@@ -11,6 +12,9 @@
 </div>
 <div *ngIf="source">
     <app-source-info [source]="source"></app-source-info>
+</div>
+<div *ngIf="series">
+    <app-series-info [series]="series"></app-series-info>
 </div>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
     <div *ngFor="let story of stories">

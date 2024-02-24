@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ListSelectComponent } from './list-view/list-select/list-select.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SourceInfoComponent } from './list-view/source-info/source-info.component';
+import { SeriesInfoComponent } from './list-view/series-info/series-info.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SourceInfoComponent } from './list-view/source-info/source-info.compone
     ListItemComponent,
     DetailItemComponent,
     ListViewComponent,
-    SourceInfoComponent
+    SourceInfoComponent,
+    SeriesInfoComponent
   ],
   imports: [
     BrowserModule,

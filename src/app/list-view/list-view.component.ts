@@ -17,6 +17,7 @@ export class ListViewComponent {
   stories: ListStory[] = [];
   author?: number;
   source?: number;
+  series?: number;
   genres: DataGenre[] = [];
   romantics: DataRomantic[] = [];
   sexualitys: DataSexuality[] = [];
@@ -30,16 +31,18 @@ export class ListViewComponent {
     this.author = Number.isNaN(a) ? undefined : a;
     let s = parseInt(this.route.snapshot.paramMap.get('source')!);
     this.source = Number.isNaN(s) ? undefined : s;
+    let se = parseInt(this.route.snapshot.paramMap.get('series')!);
+    this.series = Number.isNaN(se) ? undefined : se;
 
-    this.getListStories(this.author, this.source);
+    this.getListStories(this.author, this.source, this.series);
     this.getGenreList();
     this.getRomanticList();
     this.getSexualityList();
     this.getExplicitList();
   }
 
-  getListStories(author?: number, source?: number): void {
-    this.stories = this.storyService.getListStories(author, source);
+  getListStories(author?: number, source?: number, series?: number): void {
+    this.stories = this.storyService.getListStories(author, source, series);
   }
 
   searchStories(searchElements: DropdownSelects): void {

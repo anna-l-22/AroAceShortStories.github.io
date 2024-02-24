@@ -4,6 +4,9 @@
             <h2 class="card-title">{{story.title}} - 
                 <a [routerLink]="['../../list', {author}]" class="card-link">{{story.author.name}}</a>
             </h2>
+            <a *ngIf="series > 0" [routerLink]="['../../list', {series}]">
+                <p class="float-end" id="series">-from {{story.series?.series}} series</p>
+            </a>
         </div>
         
     <div *ngIf="source && story.link" class="row row-cols-1 row-cols-md-2 row-cols-lg-2 links">

@@ -27,6 +27,7 @@ export class DetailItemComponent {
   };
   author: number = 0;
   source: number = 0;
+  series: number = 0;
 
   constructor(private storyService: StoriesService, 
     private route: ActivatedRoute, 
@@ -36,6 +37,7 @@ export class DetailItemComponent {
     this.getDetailStory();
     this.author = this.story.author.id;
     this.source = this.story.source?.id ?? 0;
+    this.series = this.story.series?.id ?? 0;
   }
 
   getDetailStory(): void {

@@ -38,3 +38,7 @@ a {
     text-decoration: underline;
     color: white;
 }
+
+#series {
+    padding-right: 10%;
+}

@@ -11,16 +11,24 @@
                     </div>
                 </div>
             </div>
-        <div *ngFor="let identity of story?.identities">
-            <p>{{identity.romantic.romantic}} {{identity.sexuality.sexuality}}</p>
-        </div>
-        <nav class="float-end">
-            <button type="button" class="btn btn-secondary">
-                <a routerLink="/story/{{story?.id}}" class="card-text">
-                    Details
-                </a>
-            </button>
-        </nav>
+            <div *ngFor="let identity of story?.identities">
+                <p>{{identity.romantic.romantic}} {{identity.sexuality.sexuality}}</p>
+            </div>
+            <div class="row row-cols-2">  
+                <div>             
+                    <button *ngIf="story?.link" type="button" class="btn btn-light btn-outline-secondary">
+                        <a href="{{story?.link}}" class="card-text text-black">
+                            Free
+                        </a>
+                    </button>
+                </div> 
+                <div>
+                <button type="button" class="btn btn-secondary float-end">
+                    <a routerLink="/story/{{story?.id}}" class="card-text">
+                        Details
+                    </a>
+                </button></div>
+            </div>            
         </div>
     </div>
 </div>

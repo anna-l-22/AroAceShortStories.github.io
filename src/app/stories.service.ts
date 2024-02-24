@@ -48,7 +48,7 @@ export class StoriesService {
     return EXPLICIT;
   }
 
-  getListStories(author?: number, source?: number, genre?: number, 
+  getListStories(author?: number, source?: number, series?: number, genre?: number, 
     romantic?: number, sexuality?: number, explicit?: number): ListStory[] {
     var stories: ListStory[] = [];
     let storyIds: number[] = [];
@@ -56,6 +56,8 @@ export class StoriesService {
       storyIds = this.getAuthorIds(author!);
     } else if (source != null) {
       storyIds = this.getSourceIds(source);
+    } else if (series != null) {
+      storyIds = this.getSeriesIds(series);
     } else if (genre != null || romantic != null || sexuality != null || explicit != null) {
       storyIds = this.getFilteredIds(genre, romantic, sexuality, explicit);
     } else {
@@ -87,6 +89,10 @@ export class StoriesService {
 
   private getSourceIds(id: number): number[] {
     return STORIES.filter(s => s.source == id).map(s => s.id);
+  }
+
+  private getSeriesIds(id: number): number[] {
+    return STORIES.filter(s => s.series == id).map(s => s.id);
   }
 
   private getFilteredIds(
@@ -216,5 +222,10 @@ export class StoriesService {
   getSourceDetails(id: number | undefined) {
     if (id === undefined) return {};
     return SOURCE.find(s => s.id == id);
+  }
+
+  getSeriesDetails(id: number | undefined) {
+    if (id === undefined) return {};
+    return SERIES.find(s => s.id == id);
   }
 }
