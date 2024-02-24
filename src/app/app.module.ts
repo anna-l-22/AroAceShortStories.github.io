@@ -11,6 +11,7 @@ import { ListSelectComponent } from './list-view/list-select/list-select.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SourceInfoComponent } from './list-view/source-info/source-info.component';
 import { SeriesInfoComponent } from './list-view/series-info/series-info.component';
+import { DatabasesComponent } from './databases/databases.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SeriesInfoComponent } from './list-view/series-info/series-info.compone
     DetailItemComponent,
     ListViewComponent,
     SourceInfoComponent,
-    SeriesInfoComponent
+    SeriesInfoComponent,
+    DatabasesComponent
   ],
   imports: [
     BrowserModule,
