@@ -3,4 +3,5 @@ export interface DropdownSelects {
     selectedRomantic?: number;
     selectedSexuality?: number;
     selectedExplicit?: number;
+    selectedIntersectionality?: number;
 }

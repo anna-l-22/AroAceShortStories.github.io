@@ -24,6 +24,8 @@ import { GENDER } from './data/gender-data';
 import { SERIES } from './data/series-data';
 import { Series } from './interfaces/story-structure/series';
 import { Source } from './interfaces/story-structure/source';
+import { DataIntersectionalities } from './interfaces/data-structure/data-intersectionalities';
+import { INTERSECTIONALITY } from './data/intersectionality-data';
 
 @Injectable({
   providedIn: 'root'
@@ -48,8 +50,12 @@ export class StoriesService {
     return EXPLICIT;
   }
 
+  getIntersectionalityList():DataIntersectionalities[] {
+    return INTERSECTIONALITY;
+  }
+
   getListStories(author?: number, source?: number, series?: number, genre?: number, 
-    romantic?: number, sexuality?: number, explicit?: number): ListStory[] {
+    romantic?: number, sexuality?: number, explicit?: number, intersectionality?: number): ListStory[] {
     var stories: ListStory[] = [];
     let storyIds: number[] = [];
     if (author != null) {
@@ -58,8 +64,8 @@ export class StoriesService {
       storyIds = this.getSourceIds(source);
     } else if (series != null) {
       storyIds = this.getSeriesIds(series);
-    } else if (genre != null || romantic != null || sexuality != null || explicit != null) {
-      storyIds = this.getFilteredIds(genre, romantic, sexuality, explicit);
+    } else if (genre != null || romantic != null || sexuality != null || explicit != null || intersectionality != null) {
+      storyIds = this.getFilteredIds(genre, romantic, sexuality, explicit, intersectionality);
     } else {
       storyIds = this.getRandomIds();
     }
@@ -99,12 +105,14 @@ export class StoriesService {
     genre?: number, 
     romantic?: number, 
     sexuality?: number, 
-    explicit?: number): number[] {
+    explicit?: number,
+    intersectionality?: number): number[] {
     return STORIES
     .filter(s => genre == null || s.genres.some(g => genre == g))
     .filter(s => romantic == null || s.identities.some(i => i.romantic == romantic))
     .filter(s => sexuality == null || s.identities.some(i => i.sexuality == sexuality))
     .filter(s => explicit == null || s.identities.some(i => i.explicit == explicit))
+    .filter(s => intersectionality == null || s.intersectionalities.some(i => intersectionality == i))
     .map(s => s.id);
   }
 
@@ -120,6 +128,29 @@ export class StoriesService {
       identities: this.getListIdentities(story.identities)
       }       
     return listStory;
+  }
+
+  searchStories(query: string): ListStory[] {
+    query = query.toLowerCase();
+    var stories: ListStory[] = [];
+    let storyIds: number[] = [];
+    storyIds.push(...this.searchTitles(query));
+    storyIds.push(...this.searchAuthors(query));
+
+    let uniqueStoryIds = [...new Set(storyIds)];
+    for (let id of uniqueStoryIds) {
+      stories.push(this.getListStory(id))
+    }
+    return stories;
+  }
+
+  private searchAuthors(query: string): number[] {
+    let authorIds: number[] = AUTHOR.filter(a => a.name.toLowerCase().includes(query)).map( a => a.id);
+    return STORIES.filter(s => authorIds.includes(s.author)).map(s => s.id);
+  }
+
+  private searchTitles(query: string): number[] {
+    return STORIES.filter(t => t.title.toLowerCase().includes(query)).map(t => t.id);
   }
 
   getDetailStory(id: number) {

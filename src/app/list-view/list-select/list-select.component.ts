@@ -7,6 +7,7 @@ import { DataRomantic } from 'src/app/interfaces/data-structure/data-romantic';
 import { DataSexuality } from 'src/app/interfaces/data-structure/data-sexuality';
 import { DataExplicit } from 'src/app/interfaces/data-structure/data-explicit';
 import { DropdownSelects } from 'src/app/interfaces/story-structure/dropdown-selects';
+import { DataIntersectionalities } from 'src/app/interfaces/data-structure/data-intersectionalities';
 
 @Component({
   imports: [ MatSelectModule,  NgFor],
@@ -20,11 +21,13 @@ export class ListSelectComponent {
   @Input() romantics?: DataRomantic[];
   @Input() sexualitys?: DataSexuality[];
   @Input() explicits?: DataExplicit[];
+  @Input() intersectionalitys?: DataIntersectionalities[];
 
   selectedGenre?: number = undefined;
   selectedRomantic?: number = undefined;
   selectedSexuality?: number = undefined;
   selectedExplicit?: number = undefined;
+  selectedIntersectionality?: number = undefined;
 
   @Output() newItemEvent = new EventEmitter<DropdownSelects>();
 

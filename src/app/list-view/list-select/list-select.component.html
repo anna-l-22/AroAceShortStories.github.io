@@ -34,5 +34,15 @@
     </div>
     </mat-select>
 </mat-form-field>
+<mat-form-field>
+    <mat-label>Intersectionalities</mat-label>
+    <mat-select [(value)]="selectedIntersectionality">
+    <mat-option>Select a type of intersectionality</mat-option>
+    <div *ngFor="let intersectionality of intersectionalitys">
+        <mat-option [value]="intersectionality.id">{{intersectionality.intersectionality}}</mat-option>
+    </div>
+    </mat-select>
+</mat-form-field>
 <button type="button" class="btn btn-dark" 
-    (click)="addNewItem({selectedGenre, selectedRomantic, selectedSexuality, selectedExplicit})">Search</button>
+    (click)="addNewItem({selectedGenre, selectedRomantic, selectedSexuality, selectedExplicit, selectedIntersectionality})">
+    Filter</button>

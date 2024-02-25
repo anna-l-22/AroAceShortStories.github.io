@@ -7,6 +7,7 @@ import { DataRomantic } from '../interfaces/data-structure/data-romantic';
 import { DataSexuality } from '../interfaces/data-structure/data-sexuality';
 import { DataExplicit } from '../interfaces/data-structure/data-explicit';
 import { DropdownSelects } from '../interfaces/story-structure/dropdown-selects';
+import { DataIntersectionalities } from '../interfaces/data-structure/data-intersectionalities';
 @Component({
   selector: 'app-list-view',
   templateUrl: './list-view.component.html',
@@ -22,6 +23,7 @@ export class ListViewComponent {
   romantics: DataRomantic[] = [];
   sexualitys: DataSexuality[] = [];
   explicits: DataExplicit[] = [];
+  intersectionalitys: DataIntersectionalities[] = [];
 
   constructor(private storyService: StoriesService,
     private route: ActivatedRoute) {}
@@ -39,20 +41,26 @@ export class ListViewComponent {
     this.getRomanticList();
     this.getSexualityList();
     this.getExplicitList();
+    this.getIntersectionality();
   }
 
   getListStories(author?: number, source?: number, series?: number): void {
     this.stories = this.storyService.getListStories(author, source, series);
   }
 
-  searchStories(searchElements: DropdownSelects): void {
+  filterStories(searchElements: DropdownSelects): void {
     this.stories = 
     this.storyService.getListStories(undefined, 
       undefined, undefined,
       searchElements.selectedGenre, 
       searchElements.selectedRomantic, 
       searchElements.selectedSexuality, 
-      searchElements.selectedExplicit);
+      searchElements.selectedExplicit,
+      searchElements.selectedIntersectionality);
+  }
+
+  searchStories(query: string): void {
+    this.stories = this.storyService.searchStories(query);
   }
 
   getGenreList(): void {
@@ -69,5 +77,9 @@ export class ListViewComponent {
 
   getExplicitList(): void {
     this.explicits = this.storyService.getExplicitList();
+  }
+
+  getIntersectionality(): void {
+    this.intersectionalitys = this.storyService.getIntersectionalityList();
   }
 }

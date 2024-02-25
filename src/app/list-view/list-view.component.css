@@ -5,3 +5,9 @@ button {
 .databases {
     margin: auto 20px;
 }
+
+.random {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

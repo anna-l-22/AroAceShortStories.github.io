@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SourceInfoComponent } from './list-view/source-info/source-info.component';
 import { SeriesInfoComponent } from './list-view/series-info/series-info.component';
 import { DatabasesComponent } from './databases/databases.component';
+import { SearchBarComponent } from './list-view/search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,14 +23,16 @@ import { DatabasesComponent } from './databases/databases.component';
     ListViewComponent,
     SourceInfoComponent,
     SeriesInfoComponent,
-    DatabasesComponent
+    DatabasesComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     ListSelectComponent,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
