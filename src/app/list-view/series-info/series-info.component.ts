@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Series } from 'src/app/interfaces/story-structure/series';
+import { DataSeries } from 'src/app/interfaces/data-structure/data-series';
 import { StoriesService } from 'src/app/stories.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { StoriesService } from 'src/app/stories.service';
 })
 export class SeriesInfoComponent {
   @Input() series?: number
-  seriesDetails?: Series;
+  seriesDetails?: DataSeries;
 
   constructor(private storyService: StoriesService) {}
 

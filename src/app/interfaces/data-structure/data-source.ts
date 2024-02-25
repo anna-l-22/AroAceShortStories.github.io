@@ -1,4 +1,4 @@
-export interface Source {
+export interface DataSource {
     id?: number;
     source?: string;
     goodreads?: string;

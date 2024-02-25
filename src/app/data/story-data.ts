@@ -56,7 +56,7 @@ export const STORIES: DataStory[] = [
         identities: [{romantic: 1, sexuality: 1, gender: 2, prominance: 1, explicit: 2}, {romantic: 1, sexuality: 4, gender: 2, prominance: 2, explicit: 2}], source: 1, 
         description: "Aro-ace baker Even is happy with how he is, and initially pleases his sex-negative village. But his refusal to marry has opinion of him souring."},
     { id: 14, title: "The Cage and the Road", author: 6, genres: [1], warnings: [5, 9], link: "https://aroworlds.com/2022/02/24/fiction-the-cage-and-the-road/",
-        identities: [{romantic: 1, sexuality: 5, gender: 1, prominance: 1, explicit: 2}], source: 1, intersectionalities: [],
+        identities: [{romantic: 1, sexuality: 5, gender: 1, prominance: 1, explicit: 2}], source: 1, intersectionalities: [], series: 1,
         description: "In Prue's travels around the country, she encounters unwanted company who raises questions about her own life."},
     { id: 15, title: "Pillar", author: 6, genres: [1], warnings: [], link: "https://aroworlds.com/2022/11/07/hallo-aro-pillar-k-a-cook/",
         identities: [{romantic: 1, sexuality: 4, gender: 1, prominance: 1, explicit: 2}], source: 1, series: 1, intersectionalities: [],

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Source } from 'src/app/interfaces/story-structure/source';
+import { DataSource } from 'src/app/interfaces/data-structure/data-source';
 import { StoriesService } from 'src/app/stories.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { StoriesService } from 'src/app/stories.service';
 })
 export class SourceInfoComponent {
   @Input() source?: number
-  sourceDetails?: Source;
+  sourceDetails?: DataSource;
 
   constructor(private storyService: StoriesService) {}
 

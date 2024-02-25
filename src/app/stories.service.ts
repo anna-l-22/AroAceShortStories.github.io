@@ -22,8 +22,6 @@ import { DataSexuality } from './interfaces/data-structure/data-sexuality';
 import { DataExplicit } from './interfaces/data-structure/data-explicit';
 import { GENDER } from './data/gender-data';
 import { SERIES } from './data/series-data';
-import { Series } from './interfaces/story-structure/series';
-import { Source } from './interfaces/story-structure/source';
 import { DataIntersectionalities } from './interfaces/data-structure/data-intersectionalities';
 import { INTERSECTIONALITY } from './data/intersectionality-data';
 
@@ -159,13 +157,13 @@ export class StoriesService {
       id: story.id,
       title: story.title,
       author: { id: story.author, name: this.getAuthorName(story.author)},
-      source: { id: story.source, source: this.getSource(story.source)},
+      source: { id: story.source, source: this.getSourceName(story.source)},
       genres: this.getGenres(story.genres),
       link: story.link,
       identities: this.getDetailIdentities(story.identities),
       warning: this.getWarnings(story.warnings),
       description: story.description,
-      series: { id: story.series, series: this.getSeries(story.series)}
+      series: { id: story.series, series: this.getSeriesName(story.series)}
     }
     return detailStory;
   }
@@ -174,11 +172,11 @@ export class StoriesService {
     return AUTHOR.find(a => a.id == id)?.name ?? "Unknown";
   }
 
-  private getSource(id?: number): string | undefined {
+  private getSourceName(id?: number): string | undefined {
     return SOURCE.find(s => s.id == id)?.source ?? undefined;
   }
 
-  private getSeries(id?: number): string | undefined {
+  private getSeriesName(id?: number): string | undefined {
     return SERIES.find(s => s.id == id)?.series ?? undefined;
   }
 
@@ -256,7 +254,7 @@ export class StoriesService {
   }
 
   getSeriesDetails(id: number | undefined) {
-    if (id === undefined) return {};
+    if (id === undefined) return undefined;
     return SERIES.find(s => s.id == id);
   }
 }

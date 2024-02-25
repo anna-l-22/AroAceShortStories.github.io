@@ -1,5 +1,5 @@
 <div *ngIf="story">
-    <div class="card text-center details bg-secondary text-white">
+    <div class="card text-center details bg-light main">
         <div class="card-header">
             <h2 class="card-title">{{story.title}} - 
                 <a [routerLink]="['../../list', {author}]" class="card-link">{{story.author.name}}</a>
@@ -13,12 +13,12 @@
         <div *ngIf="story.source">
             <div class="col">
                 <a [routerLink]="['../../list', {source}]">
-                    <button *ngIf="story.link" type="button" class="btn btn-light btn-sm">{{story.source.source}}</button>
+                    <button *ngIf="story.link" type="button" class="btn btn-secondary btn-sm">{{story.source.source}}</button>
                 </a>
             </div>
         </div>
         <div class="col">
-            <a href="{{story.link}}"><button *ngIf="story.link" type="button" class="btn btn-light btn-sm">Read Here</button></a>
+            <a href="{{story.link}}"><button *ngIf="story.link" type="button" class="btn btn-secondary btn-sm">Read Here</button></a>
         </div>
     </div>
 
@@ -26,14 +26,14 @@
         <div *ngIf="story.source">
             <div class="col">
                 <a [routerLink]="['../../list', {source}]">
-                    <button *ngIf="story.source" type="button" class="btn btn-light btn-sm">{{story.source.source}}</button>
+                    <button *ngIf="story.source" type="button" class="btn btn-secondary btn-sm">{{story.source.source}}</button>
                 </a>
             </div>
         </div>
     </div>
 
     <div *ngIf="!source && story.link" class="links">
-        <a  href="{{story.link}}"><button *ngIf="story.link" type="button" class="btn btn-light btn-sm">Read Here</button></a>
+        <a  href="{{story.link}}"><button *ngIf="story.link" type="button" class="btn btn-secondary btn-sm">Read Here</button></a>
     </div>
 
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
@@ -73,8 +73,8 @@
         </div>
     </div>
 
-    <div class="card description bg-light">
-        <p>{{story.description}}</p>
+    <div id="description" class="card">
+        <p class="description">{{story.description}}</p>
     </div>
     <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5">
         <div *ngFor="let warning of story.warning">
