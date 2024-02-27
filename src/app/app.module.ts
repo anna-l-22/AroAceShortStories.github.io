@@ -14,6 +14,7 @@ import { SeriesInfoComponent } from './list-view/series-info/series-info.compone
 import { DatabasesComponent } from './databases/databases.component';
 import { SearchBarComponent } from './list-view/search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     SourceInfoComponent,
     SeriesInfoComponent,
     DatabasesComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
