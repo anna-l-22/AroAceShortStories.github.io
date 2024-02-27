@@ -24,6 +24,7 @@ import { GENDER } from './data/gender-data';
 import { SERIES } from './data/series-data';
 import { DataIntersectionalities } from './interfaces/data-structure/data-intersectionalities';
 import { INTERSECTIONALITY } from './data/intersectionality-data';
+import { Source } from './interfaces/story-structure/source';
 
 @Injectable({
   providedIn: 'root'
@@ -92,7 +93,7 @@ export class StoriesService {
   }
 
   private getSourceIds(id: number): number[] {
-    return STORIES.filter(s => s.source == id).map(s => s.id);
+    return STORIES.filter(s => s.source?.includes(id)).map(s => s.id);
   }
 
   private getSeriesIds(id: number): number[] {
@@ -157,7 +158,7 @@ export class StoriesService {
       id: story.id,
       title: story.title,
       author: { id: story.author, name: this.getAuthorName(story.author)},
-      source: { id: story.source, source: this.getSourceName(story.source)},
+      sources: this.getSources(story.source),
       genres: this.getGenres(story.genres),
       link: story.link,
       identities: this.getDetailIdentities(story.identities),
@@ -190,6 +191,10 @@ export class StoriesService {
 
   private getGenre(id: number): string {
     return GENRE.find(g => g.id == id)?.genre ?? "Unknown";
+  }
+
+  private getSource(id: number): string {
+    return SOURCE.find(s => s.id == id)?.source ?? "Unknown";
   }
 
   private getWarnings(ids: number[]): Warning[] {
@@ -226,6 +231,15 @@ export class StoriesService {
       })
     }
     return identitys;
+  }
+
+  private getSources(ids?: number[]): Source[] | undefined {
+    let sources: Source[] = [];
+    if (!ids) return undefined;
+    for (let id of ids) {
+      sources.push({id: id, source: this.getSource(id)})
+    }
+    return sources;
   }
 
   private getRomantic(id: number): string {

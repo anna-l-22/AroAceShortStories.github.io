@@ -18,7 +18,7 @@
 }
 
 .links {
-    margin: 10px
+    margin: 10px;
 }
 
 @media all and (max-width: 1000px) and (min-width: 700px) {
@@ -51,4 +51,13 @@ a {
 
 #series {
     padding-right: 10%;
+}
+
+button {
+    margin: 5px;
+}
+
+.read {
+    border-color: black;
+    border-width: 1px;
 }

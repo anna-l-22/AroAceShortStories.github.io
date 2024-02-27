@@ -4,7 +4,7 @@ export interface DataStory {
     id: number;
     title: string;
     author: number;
-    source?: number;
+    source?: number[];
     genres: number[];
     intersectionalities: number[];
     link?: string;

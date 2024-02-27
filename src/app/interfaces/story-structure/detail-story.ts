@@ -9,7 +9,7 @@ export interface DetailStory {
     id: number;
     title: string;
     author: Author;
-    source: Source;
+    sources?: Source[];
     genres: Genre[];
     identities: DetailIdentity[];
     link?: string;    

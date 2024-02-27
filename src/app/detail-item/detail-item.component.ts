@@ -22,11 +22,11 @@ export class DetailItemComponent {
     identities: [],
     description: '',
     warning: [],
-    source: {id: 0, source: ''},
+    sources: [],
     series: {id: 0, series: ''}
   };
   author: number = 0;
-  source: number = 0;
+  source: number[] = [];
   series: number = 0;
 
   constructor(private storyService: StoriesService, 
@@ -36,7 +36,7 @@ export class DetailItemComponent {
   ngOnInit(): void {
     this.getDetailStory();
     this.author = this.story.author.id;
-    this.source = this.story.source?.id ?? 0;
+    
     this.series = this.story.series?.id ?? 0;
   }
 
