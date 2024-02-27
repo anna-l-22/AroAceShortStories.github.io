@@ -9,4 +9,5 @@ export interface ListStory {
     genres: Genre[];
     identities: ListIdentity[];
     link?: string;
+    length?: number;
 }

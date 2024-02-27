@@ -6,5 +6,7 @@ export const SOURCE: DataSource[] = [
     { id: 2, source: "Snowstorm & Overgrowth", storygraph: "https://app.thestorygraph.com/books/a1256f95-9194-42db-a685-db849edc7994", 
         goodreads: "https://www.goodreads.com/book/show/43479411-snowstorm-overgrowth", author: "https://claudiearseneault.com/snowstorm-overgrowth/9"},
     { id: 3, source: "Bones of Green and Hearts of Gold", storygraph: "https://app.thestorygraph.com/books/9db4f433-6685-4c22-b472-d9e8e63c7f7a", 
-        goodreads: "https://www.goodreads.com/book/show/55886630-bones-of-green-and-hearts-of-gold", author: "https://aroworlds.com/fiction/collections/bones-of-green-and-hearts-of-gold/"}
+        goodreads: "https://www.goodreads.com/book/show/55886630-bones-of-green-and-hearts-of-gold", author: "https://aroworlds.com/fiction/collections/bones-of-green-and-hearts-of-gold/"},
+    { id: 4, source: "Hallo, Aro", goodreads: "https://www.goodreads.com/book/show/201381133-hallo-aro", 
+        author: "https://aroworlds.com/fiction/collections/hallo-aro/"}
 ]

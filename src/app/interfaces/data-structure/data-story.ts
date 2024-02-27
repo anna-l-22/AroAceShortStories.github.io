@@ -12,4 +12,5 @@ export interface DataStory {
     description: string;
     warnings: number[];
     series?: number;
+    length?: number;
 }
