@@ -2,9 +2,9 @@
     <div class="card-body">
         These are the stories from the {{sourceDetails?.source}} collection.
         <div>
-            <a class="btn btn-dark" href="{{sourceDetails?.author}}">Author</a>
-            <a class="btn btn-dark" href="{{sourceDetails?.storygraph}}">Storygraph</a>
-            <a class="btn btn-dark"  href="{{sourceDetails?.goodreads}}">Goodreads</a>
+            <a *ngIf="sourceDetails?.author" class="btn btn-dark" href="{{sourceDetails?.author}}">Author</a>
+            <a *ngIf="sourceDetails?.storygraph" class="btn btn-dark" href="{{sourceDetails?.storygraph}}">Storygraph</a>
+            <a *ngIf="sourceDetails?.goodreads" class="btn btn-dark"  href="{{sourceDetails?.goodreads}}">Goodreads</a>
         </div>
     </div>
 </div>
