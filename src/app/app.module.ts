@@ -15,6 +15,7 @@ import { DatabasesComponent } from './databases/databases.component';
 import { SearchBarComponent } from './list-view/search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { LengthBadgeComponent } from './length-badge/length-badge.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutComponent } from './about/about.component';
     SeriesInfoComponent,
     DatabasesComponent,
     SearchBarComponent,
-    AboutComponent
+    AboutComponent,
+    LengthBadgeComponent
   ],
   imports: [
     BrowserModule,

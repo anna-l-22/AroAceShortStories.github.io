@@ -1,7 +1,10 @@
 <div class="col">
     <div class="card list-details bg-light main">
         <div class="card-body">
-            <h3 class="card-header">{{story?.title}} - {{story?.author?.name}}</h3>
+            <h3 class="card-header">
+                <app-length-badge *ngIf="story?.length" [lengthId]="story?.length" class="float-end"></app-length-badge>
+                {{story?.title}} - {{story?.author?.name}}
+            </h3>
             <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3">
                 <div *ngFor="let genre of story?.genres">
                     <div class="col">

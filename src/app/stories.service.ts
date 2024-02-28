@@ -25,6 +25,7 @@ import { SERIES } from './data/series-data';
 import { DataIntersectionalities } from './interfaces/data-structure/data-intersectionalities';
 import { INTERSECTIONALITY } from './data/intersectionality-data';
 import { Source } from './interfaces/story-structure/source';
+import { LENGTH } from './data/length-data';
 
 @Injectable({
   providedIn: 'root'
@@ -124,6 +125,7 @@ export class StoriesService {
         name: this.getAuthorName(story.author)}, 
       genres: this.getGenres(story.genres),
       link: story.link,
+      length: story.length,
       identities: this.getListIdentities(story.identities)
       }       
     return listStory;
@@ -171,10 +173,6 @@ export class StoriesService {
 
   private getAuthorName(id: number): string {
     return AUTHOR.find(a => a.id == id)?.name ?? "Unknown";
-  }
-
-  private getSourceName(id?: number): string | undefined {
-    return SOURCE.find(s => s.id == id)?.source ?? undefined;
   }
 
   private getSeriesName(id?: number): string | undefined {
@@ -270,5 +268,9 @@ export class StoriesService {
   getSeriesDetails(id: number | undefined) {
     if (id === undefined) return undefined;
     return SERIES.find(s => s.id == id);
+  }
+
+  getLengthName(id: number | undefined): string {
+    return LENGTH.find(l => l.id == id)?.shortLength ?? "";
   }
 }
