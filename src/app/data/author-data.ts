@@ -9,5 +9,7 @@ export const AUTHOR: DataAuthor[] = [
     { id: 6, name: "K. A. Cook"},
     { id: 7, name: "K.L. Noone" },
     { id: 8, name: "John Wiswell"},
-    { id: 9, name: "Claudie Arseneault"}
+    { id: 9, name: "Claudie Arseneault"},
+    { id: 10, name: "KT Bryski" },
+    { id: 11, name: "Kate Dollarhyde" }
 ]

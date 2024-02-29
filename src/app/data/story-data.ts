@@ -1,4 +1,3 @@
-import { Title } from "@angular/platform-browser";
 import { DataStory } from "../interfaces/data-structure/data-story";
 
 export const STORIES: DataStory[] = [
@@ -72,7 +71,7 @@ export const STORIES: DataStory[] = [
         identities:[{romantic: 6, sexuality: 1, gender: 1, explicit: 2, prominance: 2}], intersectionalities: [],
         description: "A backwater MagSkater becomes too arrogent for his own good."},
     { id: 19, title: "The Wyvern Brood", author: 9, genres: [1], warnings: [10], intersectionalities: [],
-    identities: [{romantic: 1, sexuality: 1, gender: 1, prominance: 1, explicit: 2}],
+        identities: [{romantic: 1, sexuality: 1, gender: 1, prominance: 1, explicit: 2}],
         description: "A young woman from a village plagued by wyverns seeks to end seige.", source: [2]},
     { id: 20, title: "Seida the Fairy Troll", author: 9, genres: [1], warnings: [10], source: [2], intersectionalities: [],
         identities: [{romantic: 1, sexuality: 1, gender: 1, prominance: 2, explicit: 1}], description: "Outcast fairy Seida is called upon to save the day."},
@@ -83,5 +82,22 @@ export const STORIES: DataStory[] = [
     { id: 23, title: "The Vampire Conundrum", author: 6, genres: [5], warnings: [12], intersectionalities: [1,2],
         link: "https://aroworlds.com/2019/11/16/fiction-the-vampire-conundrum-part-one/",
         identities: [{romantic: 7, sexuality: 6, gender: 2, prominance: 1, explicit: 1}, {romantic: 1, sexuality: 1, gender: 1, prominance: 2, explicit: 1}], 
-        description: "Rowan brings an aromantic mug to the office, but doesn't know what to do when no one reacts.", source: [3]}
+        description: "Rowan brings an aromantic mug to the office, but doesn't know what to do when no one reacts.", source: [3]},
+    { id: 24, title: "The Dirty Golden Yellow House", author: 1, genres: [1,4], warnings: [13], link: "https://www.lightspeedmagazine.com/fiction/the-dirty-golden-yellow-house/",
+        identities: [{sexuality:1, romantic:3, gender:1, prominance:1, explicit:2}], intersectionalities: [], length: 2,
+        description: "A story of a woman who doesn't want to have sex being repeatedly coerced into sex and eventually arranging for her husband to be eaten by a monster. " 
+        + "It is more implied than outright stated that the woman is asexual, though the word is used in the story. The story is told non-linearly with narrator interjections." },
+    { id: 25, title: "The Love It Bears Fair Maidens", author: 10, genres: [1], link: "https://apex-magazine.com/short-fiction/the-love-it-bears-fair-maidens/",
+        identities: [{sexuality: 1, romantic: 4, gender: 1, explicit: 2, prominance: 1}], intersectionalities: [], warnings: [1],
+        description: "Alegorical look at the unicorn myth and it's relation to sex and compulsory sexuality from the perspective of an asexal person." },
+    { id: 26, title: "A Taxonomy of Hurts", author: 11, genres: [1], link: "https://firesidefiction.com/a-taxonomy-of-hurts",
+        identities: [{sexuality: 1, romantic: 6, gender: 5, prominance: 1, explicit: 2}], intersectionalities: [], warnings: [2],
+        description: "Characters in this world wear their hurts on their sleeves, and the protagonist learns to understand their loneliness and fear of rejection from asexuality with help."},
+    { id: 27 , title: "So, You Married Your Arch Nemesis . . . Again", author: 4, link: "https://www.lightspeedmagazine.com/fiction/so-you-married-your-arch-nemesis-again/",
+        genres: [6], intersectionalities: [2], warnings: [], 
+        identities:[{romantic: 8, sexuality: 1, gender: 3, explicit: 1, prominance: 1}, {romantic: 8, sexuality: 1, gender: 3, explicit: 1, prominance: 2}], 
+        description: "An exploration of the 'bury your gays' trope where a character tries to escape the pressure of a particular narrative strincture. Plays about with genre and style."},
+    { id: 28, title: "Later, Let’s Tear Up The Inner Sanctum", author: 4, link: "https://www.lightspeedmagazine.com/fiction/later-lets-tear-inner-sanctum/", warnings: [2], genres: [6],
+        identities: [{sexuality: 1, romantic: 5, gender: 2, explicit: 1, prominance: 2}, {sexuality: 1, romantic: 5, gender: 2, explicit: 1, prominance: 2}], intersectionalities:[], length: 2,
+        description: "Epistolery story about secrets and betrayals in a superhero group. A couple of minor characters are described as being asexual, and therefor not impacted by a villan called Lust."}
 ]
