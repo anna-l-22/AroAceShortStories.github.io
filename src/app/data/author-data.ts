@@ -12,8 +12,19 @@ export const AUTHOR: DataAuthor[] = [
     { id: 9, name: "Claudie Arseneault" },
     { id: 10, name: "KT Bryski" },
     { id: 11, name: "Kate Dollarhyde" },
-    { id: 12, name: "Bogi Takács" },
-    { id: 13, name: "TS Porter" },
-    { id: 14, name: "Y.M. Resnik" },
-    { id: 15, name: "Charles Payseur" }
+    { id: 12, name: "Morgan Swim"},
+    { id: 13, name: "E. H. Timms"},
+    { id: 14, name: "Camilla Quinn"},
+    { id: 15, name: "Mika Stanard"},
+    { id: 16, name: "Jennifer Lee Rossman"},
+    { id: 17, name: "Adriana C. Grigore"},
+    { id: 18, name: "Rosiee Thor"},
+    { id: 19, name: "A. Z. Louise"},
+    { id: 20, name: "Polenth Blake"},
+    { id: 21, name: "Cora Ruskin"},
+    { id: 22, name: "Avi Silver"},
+    { id: 23, name: "Bogi Takács" },
+    { id: 24, name: "TS Porter" },
+    { id: 25, name: "Y.M. Resnik" },
+    { id: 26, name: "Charles Payseur" }
 ]
