@@ -10,8 +10,9 @@ export const WARNING: DataWarning[] = [
     { id: 7, warning: "Abuse" },
     { id: 8, warning: "Medical" },
     { id: 9, warning: "Homophobia" },
-    { id:10, warning: "Injury"},
+    { id: 10, warning: "Injury"},
     { id: 11, warning: "Grief"},
     { id: 12, warning: "Microagressions"},
-    { id: 13, warning: "Rape" }
+    { id: 13, warning: "Rape" },
+    { id: 14, warning: "Death"}
 ]

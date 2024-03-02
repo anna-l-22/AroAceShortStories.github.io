@@ -94,10 +94,21 @@ export const STORIES: DataStory[] = [
         identities: [{sexuality: 1, romantic: 6, gender: 5, prominance: 1, explicit: 2}], intersectionalities: [], warnings: [2],
         description: "Characters in this world wear their hurts on their sleeves, and the protagonist learns to understand their loneliness and fear of rejection from asexuality with help."},
     { id: 27 , title: "So, You Married Your Arch Nemesis . . . Again", author: 4, link: "https://www.lightspeedmagazine.com/fiction/so-you-married-your-arch-nemesis-again/",
-        genres: [6], intersectionalities: [2], warnings: [], 
+        genres: [6], intersectionalities: [2], warnings: [14, 10], 
         identities:[{romantic: 8, sexuality: 1, gender: 3, explicit: 1, prominance: 1}, {romantic: 8, sexuality: 1, gender: 3, explicit: 1, prominance: 2}], 
         description: "An exploration of the 'bury your gays' trope where a character tries to escape the pressure of a particular narrative strincture. Plays about with genre and style."},
     { id: 28, title: "Later, Let’s Tear Up The Inner Sanctum", author: 4, link: "https://www.lightspeedmagazine.com/fiction/later-lets-tear-inner-sanctum/", warnings: [2], genres: [6],
         identities: [{sexuality: 1, romantic: 5, gender: 2, explicit: 1, prominance: 2}, {sexuality: 1, romantic: 5, gender: 2, explicit: 1, prominance: 2}], intersectionalities:[], length: 2,
-        description: "Epistolery story about secrets and betrayals in a superhero group. A couple of minor characters are described as being asexual, and therefor not impacted by a villan called Lust."}
+        description: "Epistolery story about secrets and betrayals in a superhero group. A couple of minor characters are described as being asexual, and therefor not impacted by a villan called Lust."},
+    { id: 29, title: "Power to Yield", author: 12, link: "https://clarkesworldmagazine.com/takacs_07_20/", genres: [3], intersectionalities: [1], warnings: [], length: 1,
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 1, prominance: 1}, {sexuality: 1, romantic: 1, gender: 2, explicit: 1, prominance: 1}], 
+        description: "On a planet inhabited largely by autistic people, a young woman develops an interest in an influential and contraversial figure on her planet, leading to circustances of difficult morality."},
+    { id: 30, title: "(don’t you) love a singer", author: 13, source: [5], genres: [3], warnings: [10], intersectionalities: [], 
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 1, prominance: 1}], description: "A singer must take up the lead position to bring a spaceship safely home. "},
+    { id: 31, title: "Far From The Home I Love", author: 14, link: "https://www.castofwonders.org/2022/09/cast-of-wonders-509-far-from-the-home-i-love/", 
+        identities: [{sexuality: 1, romantic: 1, explicit: 2, gender: 1, prominance: 2}], intersectionalities: [], warnings: [1,9], genres: [3],
+        description: "Miriam has to go back to her family to remove herself from her queerphobic family tree."},
+    { id: 32, title: "Humans Die, Stars Fade", author: 15, link: "https://escapepod.org/2018/05/10/escape-pod-627-humans-die-stars-fade/", genres: [3], 
+        identities: [{sexuality: 1, romantic: 8, gender: 2, prominance: 2, explicit: 1}], intersectionalities: [], warnings:[],
+        description: "An alien lifeform living in an unstable part of the universe is visited by a human spaceship. The asexual character does not actually appear, and is only referred to."}
 ]

@@ -21,3 +21,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 .Contemporary {
     background-color: rgb(235, 183, 147);
 }
+.Superhero {
+    background-color: blue;
+    color: white;
+}
