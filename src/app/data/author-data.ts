@@ -26,5 +26,8 @@ export const AUTHOR: DataAuthor[] = [
     { id: 23, name: "Bogi Takács" },
     { id: 24, name: "TS Porter" },
     { id: 25, name: "Y.M. Resnik" },
-    { id: 26, name: "Charles Payseur" }
+    { id: 26, name: "Charles Payseur" },
+    { id: 27, name: "RoAnna Sylver"},
+    { id: 28, name: "Darcie Little Badger"},
+    { id: 30, name: "S. Qiouyi Lu"}
 ]
