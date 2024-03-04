@@ -12,6 +12,8 @@ export const SOURCE: DataSource[] = [
     { id: 5, source: "Common Bonds: An Aromantic Speculative Anthology", goodreads: "https://www.goodreads.com/en/book/show/51563160", 
         storygraph: "https://app.thestorygraph.com/books/eb99d06b-c9be-4d34-a22c-21eb421af84b", author: "https://claudiearseneault.com/books/common-bonds/"},
     { id: 6, source: "It Gets Even Better: Stories of Queer Possibility", storygraph: "https://app.thestorygraph.com/books/49bd9d90-883b-45ae-9819-0d379a24778f",
-        goodreads: "https://www.goodreads.com/book/show/56652022-it-gets-even-better"}
+        goodreads: "https://www.goodreads.com/book/show/56652022-it-gets-even-better"},
+    { id: 7, source: "Life Within Parole: Volume 1", storygraph: "https://app.thestorygraph.com/books/f3231be4-a0f5-44d3-aa43-1c98cd02c182", 
+        goodreads: "https://www.goodreads.com/en/book/show/32855718", author: "https://roannasylver.itch.io/life-within-parole-volume-1"}
 
 ]
