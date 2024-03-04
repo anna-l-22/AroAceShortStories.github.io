@@ -7,5 +7,5 @@ export const GENRE: DataGenre[] = [
     { id: 4, genre: "Horror" },
     { id: 5, genre: "Contemporary" },
     { id: 6, genre: "Superhero" },
-    { id: 7, genre: "Magical Realism"}
+    { id: 7, genre: "Magical-Realism"}
 ]

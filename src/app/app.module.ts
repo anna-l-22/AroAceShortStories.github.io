@@ -11,7 +11,6 @@ import { ListSelectComponent } from './list-view/list-select/list-select.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SourceInfoComponent } from './list-view/source-info/source-info.component';
 import { SeriesInfoComponent } from './list-view/series-info/series-info.component';
-import { DatabasesComponent } from './databases/databases.component';
 import { SearchBarComponent } from './list-view/search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
@@ -25,7 +24,6 @@ import { LengthBadgeComponent } from './length-badge/length-badge.component';
     ListViewComponent,
     SourceInfoComponent,
     SeriesInfoComponent,
-    DatabasesComponent,
     SearchBarComponent,
     AboutComponent,
     LengthBadgeComponent

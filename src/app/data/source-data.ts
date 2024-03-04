@@ -14,6 +14,8 @@ export const SOURCE: DataSource[] = [
     { id: 6, source: "It Gets Even Better: Stories of Queer Possibility", storygraph: "https://app.thestorygraph.com/books/49bd9d90-883b-45ae-9819-0d379a24778f",
         goodreads: "https://www.goodreads.com/book/show/56652022-it-gets-even-better"},
     { id: 7, source: "Life Within Parole: Volume 1", storygraph: "https://app.thestorygraph.com/books/f3231be4-a0f5-44d3-aa43-1c98cd02c182", 
-        goodreads: "https://www.goodreads.com/en/book/show/32855718", author: "https://roannasylver.itch.io/life-within-parole-volume-1"}
-
+        goodreads: "https://www.goodreads.com/en/book/show/32855718", author: "https://roannasylver.itch.io/life-within-parole-volume-1"},
+    { id: 8, source: "Power to Yield and Other Stories",goodreads: "https://www.goodreads.com/en/book/show/199334284",
+        storygraph: "https://app.thestorygraph.com/books/a30d4dab-fa34-4ac0-8ffd-2c2a704eb9e2"},
+    { id: 9, source: "Spirits Most Singular", author: "https://aroworlds.com/fiction/collections/spirits-most-singular/"}
 ]

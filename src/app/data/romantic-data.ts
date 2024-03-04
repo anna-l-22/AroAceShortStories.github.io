@@ -8,5 +8,9 @@ export const ROMANTIC: DataRomantic[] = [
     { id: 5, romantic: "homoromantic"},
     { id: 6, romantic: "biromantic"},
     { id: 7, romantic: "frayromantic"},
-    { id: 8, romantic: "alloromantic" }
+    { id: 8, romantic: "alloromantic" },
+    { id: 9, romantic: "recipromantic"},
+    { id: 10, romantic: "lithromantic"},
+    { id: 11, romantic: "aro-flux"},
+    { id: 12, romantic: "idemromantic"}
 ]
