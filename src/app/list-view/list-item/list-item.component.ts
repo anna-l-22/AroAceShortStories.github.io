@@ -8,4 +8,10 @@ import { ListStory } from '../../interfaces/story-structure/list-story';
 })
 export class ListItemComponent {
   @Input() story?: ListStory
+
+  ngOnInit() {
+    if (this.story?.id == 1){
+      console.log(this.story)
+    }
+  }
 }

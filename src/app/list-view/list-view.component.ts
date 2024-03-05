@@ -46,7 +46,6 @@ export class ListViewComponent {
 
   getListStories(author?: number, source?: number, series?: number): void {
     this.stories = this.storyService.getListStories(author, source, series);
-    console.log(this.stories[0])
   }
 
   filterStories(searchElements: DropdownSelects): void {
