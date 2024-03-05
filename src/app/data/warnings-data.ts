@@ -19,5 +19,11 @@ export const WARNING: DataWarning[] = [
     { id: 16, warning: "Death"},
     { id: 17, warning: "Panic Attack"},
     { id: 18, warning: "Transphobia"},
-    { id: 19, warning: "Dying parent"}
+    { id: 19, warning: "Dying parent"},
+    { id: 20, warning: "Agism"},
+    { id: 21, warning: "Terminal Illness"},
+    { id: 22, warning: "Animal Abuse"},
+    { id: 23, warning: "Drug Abuse"},
+    { id: 24, warning: "Overstimulation"},
+    { id: 25, warning: "Sex Negativity"}
 ]

@@ -12,5 +12,6 @@ export const ROMANTIC: DataRomantic[] = [
     { id: 9, romantic: "recipromantic"},
     { id: 10, romantic: "lithromantic"},
     { id: 11, romantic: "aro-flux"},
-    { id: 12, romantic: "idemromantic"}
+    { id: 12, romantic: "idemromantic"},
+    { id: 13, romantic: "greyromantic"}
 ]

@@ -17,5 +17,7 @@ export const SOURCE: DataSource[] = [
         goodreads: "https://www.goodreads.com/en/book/show/32855718", author: "https://roannasylver.itch.io/life-within-parole-volume-1"},
     { id: 8, source: "Power to Yield and Other Stories",goodreads: "https://www.goodreads.com/en/book/show/199334284",
         storygraph: "https://app.thestorygraph.com/books/a30d4dab-fa34-4ac0-8ffd-2c2a704eb9e2"},
-    { id: 9, source: "Spirits Most Singular", author: "https://aroworlds.com/fiction/collections/spirits-most-singular/"}
+    { id: 9, source: "Spirits Most Singular", author: "https://aroworlds.com/fiction/collections/spirits-most-singular/"},
+    { id: 10, source: "When Quiver Meets Quill", author: "https://aroworlds.com/fiction/collections/when-quiver-meets-quill/",
+        storygraph: "https://app.thestorygraph.com/books/c4d68ca5-dfd3-49c4-9105-cbb59c3e7ed1", goodreads: "https://www.goodreads.com/book/show/56487334-when-quiver-meets-quill"}
 ]

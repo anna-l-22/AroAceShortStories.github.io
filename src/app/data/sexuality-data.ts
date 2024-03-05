@@ -8,5 +8,6 @@ export const SEXUALITY: DataSexuality[] = [
     { id: 5, sexuality: "pansexual" },
     { id: 6, sexuality: "bisexual"},
     { id: 7, sexuality: "heterosexual"},
-    { id: 8, sexuality: "homosexual"}
+    { id: 8, sexuality: "homosexual"},
+    { id: 9, sexuality: "greysexual"}
 ]
