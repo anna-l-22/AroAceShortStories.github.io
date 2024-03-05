@@ -29,6 +29,7 @@ export const AUTHOR: DataAuthor[] = [
     { id: 26, name: "Charles Payseur" },
     { id: 27, name: "RoAnna Sylver"},
     { id: 28, name: "Darcie Little Badger"},
+    { id: 29, name: "Alyssa Wong"},
     { id: 30, name: "S. Qiouyi Lu"},
     { id: 31, name: "Nikoline Kaiser"}
 ]

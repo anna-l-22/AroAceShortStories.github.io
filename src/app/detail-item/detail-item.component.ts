@@ -1,6 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 import { DetailStory } from '../interfaces/story-structure/detail-story';
 import { StoriesService } from '../stories.service';
 
@@ -30,8 +29,7 @@ export class DetailItemComponent {
   series: number = 0;
 
   constructor(private storyService: StoriesService, 
-    private route: ActivatedRoute, 
-    private location: Location) {}
+    private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.getDetailStory();
