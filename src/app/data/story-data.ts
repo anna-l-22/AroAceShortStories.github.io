@@ -51,7 +51,7 @@ export const STORIES: DataStory[] = [
         identities: [{romantic: 1, sexuality: 5, gender: 1, prominance: 1, explicit: 2}], source: [1, 4], series: 1, intersectionalities: [],
         description: "Prue travels the country searching for a witch, finding it better than the alternatives.", length: 3},
     { id: 13, title: "Before Crows' Eyes", author: 6, genres: [1], warnings: [1, 3, 5, 9], 
-        link: "https://aroworlds.com/2022/02/21/fiction-before-crows-eyes/", series: 1, intersectionalities:[2], source: [1], 
+        link: "https://aroworlds.com/2022/02/21/fiction-before-crows-eyes/", series: 1, intersectionalities:[2,3], source: [1], 
         identities: [{romantic: 1, sexuality: 1, gender: 2, prominance: 1, explicit: 2}, {romantic: 1, sexuality: 4, gender: 2, prominance: 2, explicit: 2}],
         description: "Aro-ace baker Even is happy with how he is, and initially pleases his sex-negative village. But his refusal to marry has opinion of him souring."},
     { id: 14, title: "The Cage and the Road", author: 6, genres: [1], warnings: [5, 9], link: "https://aroworlds.com/2022/02/24/fiction-the-cage-and-the-road/",
@@ -148,7 +148,7 @@ export const STORIES: DataStory[] = [
         identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}], description: "Two Indigenous girls that ran away from home solve a haunting. Character is only briefly implied to be a-spec."},
     {id: 48, title: "Surely You'll Drown Here if You Stay", author: 29, warnings: [2, 13], genres: [1, 4], link: "https://www.uncannymagazine.com/article/youll-surely-drown-stay/", intersectionalities: [], 
         identities: [{sexuality: 1, romantic: 3, gender: 2, explicit: 2, prominance: 1}], description: "A boy in a Wild West setting has powers because his mother is the desert. He acts as a guide through the desert to some greedy men. " 
-        + "This representation is controversial/has been criticized by some asexual reviewers"},
+        + "This representation is controversial/has been criticized by some asexual reviewers", length:2},
     {id: 49, title: "Anything Resembling Love", author: 30, warnings: [2], genres: [7], link: "https://reactormag.com/anything-resembling-love-s-qiouyi-lu/", intersectionalities: [3], identities: [{sexuality: 1, romantic: 4, gender: 1, explicit: 1, prominance: 2}], 
         description: "A first year university student explores her sexuality and learns to hide her discomfort (manifested in the form of centipedes emerging from her body) from men. This is a powerful exploration of the effect of rape culture on university students."},
     { id: 50, title: "Ode to an Asexual", author: 31, link: "http://strangehorizons.com/poetry/ode-to-an-asexual/", length: 4, genres: [5],
@@ -173,7 +173,7 @@ export const STORIES: DataStory[] = [
         description: "An aromantic shop owner deals with hir coworker trying to set hir up on a date.", intersectionalities: [1,2], source: [3,10],
         identities: [{sexuality: 3, romantic: 1, gender: 3, explicit: 1, prominance: 1},{sexuality: 3, romantic: 1, gender: 2, explicit: 1, prominance: 2}]},
     { id: 58,title: "The Sorcerous Compendium of Postmortem Query", author: 6, link: "https://aroworlds.com/marchverse/mara-and-esher-hill/the-sorcerous-compendium-of-postmortem-query/", genres: [1], intersectionalities: [2],
-        series: 4, source: [3,10], description: "A lithromantic girl seeks advice from the ghosts of members of her community who have died.", warnings: [5,15],
+        series: 4, source: [3,10], description: "A lithromantic girl seeks advice from the ghosts of members of her community who have died.", warnings: [5,15], length:2,
         identities: [{romantic: 10, sexuality: 8, gender: 1, explicit: 2, prominance: 1},{sexuality: 6, romantic: 1, gender: 1, explicit: 2, prominance: 2},{sexuality: 3, romantic: 2, gender: 1, explicit: 2, prominance: 2},
         {sexuality:1, romantic: 1, gender: 2, explicit: 2,  prominance: 2},{romantic: 7, sexuality: 3, gender: 2, explicit: 2, prominance: 2},{sexuality: 3, romantic: 11, gender: 3, explicit: 2, prominance: 2},{sexuality: 1, romantic:1, gender:2,explicit:2,prominance:2}]},
     { id: 59, title: "The Mundane Progression of Premortem Colloquy", author: 6, link: "https://aroworlds.com/marchverse/mara-and-esher-hill/the-mundane-progression-of-premortem-colloquy/", source: [3], series: 4,
@@ -187,7 +187,7 @@ export const STORIES: DataStory[] = [
     { id: 62, title: "What If It Isn’t", author: 6, link: "https://aroworlds.com/2018/08/01/what-if-it-isnt-k-a-cook/", warnings: [], identities: [{sexuality: 4, romantic: 13, gender: 1, explicit: 1, prominance: 1}],
         description: "Two girls visit a museum and have a conversation about their relationship.", intersectionalities: [1], genres: [5], source: [3,10]},
     { id: 63, title: "What Makes Us Human", author: 6, link: "https://aroworlds.com/marchverse/mara-and-esher-hill/what-makes-us-human/", series: 4, source: [3,9], warnings: [5,15],
-        description: "An autistic, loveless aro priest struggles with giving advice to a guest that dehumanizes them.", intersectionalities: [1,2],
+        description: "An autistic, loveless aro priest struggles with giving advice to a guest that dehumanizes them.", intersectionalities: [1,2], length:2,
         identities: [{sexuality: 3, romantic:1, gender:3, explicit: 1, prominance: 1},{sexuality: 4, romantic: 1, gender: 1, explicit: 3, prominance: 2}], genres: [1]},
     { id: 64, title: "Those With More", author: 6, link: "https://aroworlds.com/2020/09/13/book-edition-those-with-more/", length: 2, warnings: [5,14,4,20], series: 4, source: [3,9],
         identities: [{sexuality: 7, romantic: 1, gender: 1, explicit: 1, prominance: 1},{sexuality: 3, romantic: 1, gender: 3, explicit: 1, prominance: 2},{sexuality: 8, romantic: 10, gender:1, explicit: 1, prominance:2},
@@ -207,5 +207,7 @@ export const STORIES: DataStory[] = [
     { id: 69, title: "The Wind and the Stars", author: 6, link: "https://aroworlds.com/fiction/the-wind-and-the-stars/", genres: [1], series: 1, warnings: [14], intersectionalities: [2],
         source: [9,10], description: "An aro ace trader reflects on the nature of stories and fairy tales.", identities: [{sexuality: 1, romantic: 1, gender: 3, explicit: 2, prominance: 1}]},
     { id: 70, title: "Love Spells, Rainbows and Rosie", author: 6, link: "https://aroworlds.com/2020/09/22/fiction-love-spells-rainbows-and-rosie/", series: 4, genres: [1], warnings: [4,14], 
-        description: "A witch shopkeeper deals with a fantasy version of Valentine’s Day coming up.", intersectionalities: [2], identities: [{sexuality: 8, romantic: 10, gender: 1, explicit: 1, prominance: 1}]}
+        description: "A witch shopkeeper deals with a fantasy version of Valentine’s Day coming up.", intersectionalities: [2], identities: [{sexuality: 8, romantic: 10, gender: 1, explicit: 1, prominance: 1}]},
+    { id: 71, title: "Singot", author: 32, link: "https://magazine.metaphorosis.com/story/2021/Singot-E.C-Fuller/", genres: [3], identities: [{sexuality: 1, romantic: 4, gender: 1, explicit: 1, prominance: 1}],
+        intersectionalities: [], warnings: [10,16], description: "A teacher discovers she is asexual from discussing connections with an alien."}
  ]

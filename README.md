@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Note to self
 To deploy, run command ng build --output-path docs --base-href "https://AroAceShortStories.github.io/"
+
+To test build, run ng build --output-path docs then http-server docs/
