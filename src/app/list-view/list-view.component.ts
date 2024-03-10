@@ -8,6 +8,7 @@ import { DataSexuality } from '../interfaces/data-structure/data-sexuality';
 import { DataExplicit } from '../interfaces/data-structure/data-explicit';
 import { DropdownSelects } from '../interfaces/story-structure/dropdown-selects';
 import { DataIntersectionalities } from '../interfaces/data-structure/data-intersectionalities';
+import { Filters } from '../interfaces/story-structure/filters';
 @Component({
   selector: 'app-list-view',
   templateUrl: './list-view.component.html',
@@ -48,15 +49,15 @@ export class ListViewComponent {
     this.stories = this.storyService.getListStories(author, source, series);
   }
 
-  filterStories(searchElements: DropdownSelects): void {
+  filterStories(filters: Filters): void {
     this.stories = 
     this.storyService.getListStories(undefined, 
       undefined, undefined,
-      searchElements.selectedGenre, 
-      searchElements.selectedRomantic, 
-      searchElements.selectedSexuality, 
-      searchElements.selectedExplicit,
-      searchElements.selectedIntersectionality);
+      filters.genre, 
+      filters.romantic, 
+      filters.sexual, 
+      filters.explicit,
+      filters.intersectionality);
   }
 
   searchStories(query: string): void {

@@ -1,48 +1,78 @@
-<mat-form-field>
-    <mat-label>Genre</mat-label>
-    <mat-select [(value)]="selectedGenre">
-        <mat-option>Select a genre</mat-option>
-      <div *ngFor="let genre of genres">
-        <mat-option [value]="genre.id">{{genre.genre}}</mat-option>
+<div class="row btn-group" role="group" aria-label="filter options">
+    <div class="col dropdown">
+        <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="genre dropdown" ngbDropdownToggle>
+                {{nameGenre || 'Genre'}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="genre dropdown">
+                <button ngbDropdownItem (click)="setGenreName()">Select a genre</button>
+                <div *ngFor="let genre of genres">
+                    <button ngbDropdownItem (click)="setGenreName(genre.genre, genre.id)">
+                        {{genre.genre}}</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="col dropdown">
+        <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="romantic dropdown" ngbDropdownToggle>
+                {{nameRomantic || 'Romantic Orientation'}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="romantic dropdown">
+                <button ngbDropdownItem (click)="setRomanticName()">Select a romantic orientation</button>
+                <div *ngFor="let romantic of romantics">
+                    <button ngbDropdownItem (click)="setRomanticName(romantic.romantic, romantic.id)">
+                        {{romantic.romantic}}</button>
+                </div>
+            </div>
+        </div>
+    </div>	
+    <div class="col dropdown">
+        <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="sexuality dropdown" ngbDropdownToggle>
+                {{nameSexuality || 'Sexual Orientation'}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="sexuality dropdown">
+                <button ngbDropdownItem (click)="setSexualityName()">Select a sexual orientation</button>
+                <div *ngFor="let sexuality of sexualitys">
+                    <button ngbDropdownItem (click)="setSexualityName(sexuality.sexuality, sexuality.id)">
+                        {{sexuality.sexuality}}</button>
+                </div>
+            </div>
+        </div>
+    </div>	
+    <div class="col dropdown">
+        <div ngbDropdown class="d-inline-block">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="explicitness dropdown" ngbDropdownToggle>
+                {{nameExplicit || 'Explicitness'}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="explicitness dropdown">
+                <button ngbDropdownItem (click)="setExplicitName()">Select a level of explicitness</button>
+                <div *ngFor="let explicit of explicits">
+                    <button ngbDropdownItem (click)="setExplicitName(explicit.type, explicit.id)">
+                        {{explicit.type}}</button>
+                </div>
+            </div>
+        </div>
     </div>
-    </mat-select>
-</mat-form-field>
-<mat-form-field>
-    <mat-label>Romantic Orientation</mat-label>
-    <mat-select [(value)]="selectedRomantic">
-    <mat-option>Select a romantic orientation</mat-option>
-    <div *ngFor="let romantic of romantics">
-        <mat-option [value]="romantic.id">{{romantic.romantic}}</mat-option>
+	<div class="col dropdown">
+		<div ngbDropdown class="d-inline-block">
+			<button type="button" class="btn btn-secondary dropdown-toggle" id="intersectionality dropdown" ngbDropdownToggle>
+				{{nameIntersectionality || 'Intersectionalities'}}
+			</button>
+			<div ngbDropdownMenu aria-labelledby="intersectionality dropdown">
+				<button ngbDropdownItem (click)="setIntersectionalityName()">Select a type of intersectionality</button>
+				<div *ngFor="let intersectionality of intersectionalitys">
+                    <button ngbDropdownItem 
+                        (click)="setIntersectionalityName(intersectionality.intersectionality, intersectionality.id)">
+                        {{intersectionality.intersectionality}}</button>
+                </div>
+			</div>
+		</div>
+	</div>	
+    <div class="col d-flex justify-content-center">
+        <button type="button" class="btn btn-dark"     
+            (click)="sendFilterItems()">    
+            Filter</button>
     </div>
-    </mat-select>
-</mat-form-field>
-<mat-form-field>
-    <mat-label>Sexual Orientation</mat-label>
-    <mat-select [(value)]="selectedSexuality">
-    <mat-option>Select a sexual orientation</mat-option>
-    <div *ngFor="let sexuality of sexualitys">
-        <mat-option [value]="sexuality.id">{{sexuality.sexuality}}</mat-option>
-    </div>
-    </mat-select>
-</mat-form-field>
-<mat-form-field>
-    <mat-label>Explicitness</mat-label>
-    <mat-select [(value)]="selectedExplicit">
-    <mat-option>Select a level of explicitness</mat-option>
-    <div *ngFor="let explicit of explicits">
-        <mat-option [value]="explicit.id">{{explicit.type}}</mat-option>
-    </div>
-    </mat-select>
-</mat-form-field>
-<mat-form-field>
-    <mat-label>Intersectionalities</mat-label>
-    <mat-select [(value)]="selectedIntersectionality">
-    <mat-option>Select a type of intersectionality</mat-option>
-    <div *ngFor="let intersectionality of intersectionalitys">
-        <mat-option [value]="intersectionality.id">{{intersectionality.intersectionality}}</mat-option>
-    </div>
-    </mat-select>
-</mat-form-field>
-<button type="button" class="btn btn-dark" 
-    (click)="addNewItem({selectedGenre, selectedRomantic, selectedSexuality, selectedExplicit, selectedIntersectionality})">
-    Filter</button>
+</div>
