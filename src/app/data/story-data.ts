@@ -209,5 +209,13 @@ export const STORIES: DataStory[] = [
     { id: 70, title: "Love Spells, Rainbows and Rosie", author: 6, link: "https://aroworlds.com/2020/09/22/fiction-love-spells-rainbows-and-rosie/", series: 4, genres: [1], warnings: [4,14], 
         description: "A witch shopkeeper deals with a fantasy version of Valentine’s Day coming up.", intersectionalities: [2], identities: [{sexuality: 8, romantic: 10, gender: 1, explicit: 1, prominance: 1}]},
     { id: 71, title: "Singot", author: 32, link: "https://magazine.metaphorosis.com/story/2021/Singot-E.C-Fuller/", genres: [3], identities: [{sexuality: 1, romantic: 4, gender: 1, explicit: 1, prominance: 1}],
-        intersectionalities: [], warnings: [10,16], description: "A teacher discovers she is asexual from discussing connections with an alien."}
+        intersectionalities: [], warnings: [10,16], description: "A teacher discovers she is asexual from discussing connections with an alien."},
+    { id: 72, title: "Lonely Robot on a Rocket Ship in Space", author: 4, source: [11], link: "https://escapepod.org/2018/02/16/escape-pod-615-lonely-robot-rocket-ship-space/", identities: [{romantic: 1, sexuality: 1, gender: 2, explicit: 2, prominance: 1}],
+        genres: [3], intersectionalities: [], warnings: [], description: "The main characteridentifies as a robot and has a coming out narrative analogous to being trans. Briefly described as not being interested in girls or boys."},
+    { id: 73, title: "A Few Personal Observations On Portals", author: 1, link: "https://www.thesunmagazine.org/issues/503/a-few-personal-observations-on-portals", identities: [{sexuality: 1, romantic: 3, gender: 1, explicit: 2, prominance: 1}],
+        genres: [1], intersectionalities: [], warnings: [], description: "A portal to another world appears in the bathroom of a house in a small town."},
+    { id: 74, title: "Touch", author: 1, link: "http://interfictions.com/touchdebbie-urbanski/", genres: [8], identities: [{sexuality: 1, romantic: 4, gender: 1, prominance: 1, explicit: 1},{sexuality: 1, romantic: 4, gender: 2, prominance: 2, explicit: 2}],
+        intersectionalities: [], warnings: [1,26], description: "A woman describes her rejection from a dystopian society focused on sexual pleasure."},
+    { id: 75, title: "The Interruption", author: 1, link: "https://www.vice.com/en/article/paka39/the-interruption", genres: [7], identities: [{sexuality: 1, romantic: 3, gender: 1, explicit: 2, prominance: 1}],
+        intersectionalities: [], warnings: [], description: "A wife gets lost and calls her husband."}
  ]

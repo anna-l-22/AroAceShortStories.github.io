@@ -19,5 +19,7 @@ export const SOURCE: DataSource[] = [
         storygraph: "https://app.thestorygraph.com/books/a30d4dab-fa34-4ac0-8ffd-2c2a704eb9e2"},
     { id: 9, source: "Spirits Most Singular", author: "https://aroworlds.com/fiction/collections/spirits-most-singular/"},
     { id: 10, source: "When Quiver Meets Quill", author: "https://aroworlds.com/fiction/collections/when-quiver-meets-quill/",
-        storygraph: "https://app.thestorygraph.com/books/c4d68ca5-dfd3-49c4-9105-cbb59c3e7ed1", goodreads: "https://www.goodreads.com/book/show/56487334-when-quiver-meets-quill"}
+        storygraph: "https://app.thestorygraph.com/books/c4d68ca5-dfd3-49c4-9105-cbb59c3e7ed1", goodreads: "https://www.goodreads.com/book/show/56487334-when-quiver-meets-quill"},
+    { id: 11, source: "Friends For Robots", goodreads: "https://www.goodreads.com/book/show/59690738-friends-for-robots",
+        storygraph: "https://app.thestorygraph.com/books/6efaf5ec-9081-41e3-ab74-1a023cd417c2", author: "https://mercfennwolfmoor.carrd.co/#friendsforrobots"}
 ]
