@@ -7,22 +7,24 @@
     <div class="h-100 d-flex align-items-center justify-content-center">
     <div class="row databases">
         <p class="col-sm-6">Click here to find some more information about the database.</p>
-        <a routerLink="about" class="col-sm-6"><button class="btn btn-dark">About</button></a>
+        <a [routerLink]="aboutRoute" class="col-sm-6"><button class="btn btn-dark">About</button></a>
     </div></div>
 </div>
-<div>
-    <app-list-select class="justify-content-center row" [genres]="genres" [romantics]="romantics" [sexualitys]="sexualitys" [explicits]="explicits" 
-    [intersectionalitys]="intersectionalitys" (filterItems)="filterStories($event)"></app-list-select>
-</div>
-<div class="container">
-<div class="row row-cols-1 row-cols-md-2 g-2 justify-content-around">
-    <div class="col change-row">
-        <app-search-bar (newItemEvent)="searchStories($event)"></app-search-bar>
+<div *ngIf="!source && !series">
+    <div>
+        <app-list-select class="justify-content-center row" [genres]="genres" [romantics]="romantics" [sexualitys]="sexualitys" [explicits]="explicits" 
+        [intersectionalitys]="intersectionalitys" (filterItems)="filterStories($event)"></app-list-select>
     </div>
-    <div class="col change-row">
-        <button class="btn btn-dark random" (click)="getListStories(author, source)">Random Shuffle</button>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-around">
+            <div class="col change-row">
+                <app-search-bar (newItemEvent)="searchStories($event)"></app-search-bar>
+            </div>
+            <div class="col change-row">
+                <button class="btn btn-dark random" (click)="getListStories(author, source)">Random Shuffle</button>
+            </div>
+        </div>
     </div>
-</div>
 </div>
 <div *ngIf="source">
     <app-source-info [source]="source"></app-source-info>

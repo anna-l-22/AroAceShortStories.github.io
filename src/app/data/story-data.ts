@@ -217,5 +217,9 @@ export const STORIES: DataStory[] = [
     { id: 74, title: "Touch", author: 1, link: "http://interfictions.com/touchdebbie-urbanski/", genres: [8], identities: [{sexuality: 1, romantic: 4, gender: 1, prominance: 1, explicit: 1},{sexuality: 1, romantic: 4, gender: 2, prominance: 2, explicit: 2}],
         intersectionalities: [], warnings: [1,26], description: "A woman describes her rejection from a dystopian society focused on sexual pleasure."},
     { id: 75, title: "The Interruption", author: 1, link: "https://www.vice.com/en/article/paka39/the-interruption", genres: [7], identities: [{sexuality: 1, romantic: 3, gender: 1, explicit: 2, prominance: 1}],
-        intersectionalities: [], warnings: [], description: "A wife gets lost and calls her husband."}
+        intersectionalities: [], warnings: [], description: "A wife gets lost and calls her husband."},
+    { id: 76, title: "Between Spells and Shadows: A Cozy Cauldron Romance", author: 33, genres: [1,2], intersectionalities: [], identities: [{romantic: 5, sexuality: 1, gender: 1, prominance:1, explicit: 1}],
+        warnings: [], description: "Witch Thea has a rival who constantly seeks to ruin her life. So she summons a demon to get her own back.", length: 2},
+    { id: 77, title: "Werecockroach", author: 20, intersectionalities: [1,2,3], genres: [3], length: 1, warnings: [27], 
+        identities: [{gender: 6, sexuality: 1, romantic: 1, prominance: 1, explicit: 1},{gender: 2, sexuality: 1, romantic: 1, prominance: 1, explicit: 1}], description: "Rin moves into a new flat just as the alien invasion arrives. But something is odd about their new flatmates..."}
  ]

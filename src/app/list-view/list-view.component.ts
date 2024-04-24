@@ -25,6 +25,7 @@ export class ListViewComponent {
   sexualitys: DataSexuality[] = [];
   explicits: DataExplicit[] = [];
   intersectionalitys: DataIntersectionalities[] = [];
+  aboutRoute: string = "./about"
 
   constructor(private storyService: StoriesService,
     private route: ActivatedRoute) {}
@@ -36,13 +37,21 @@ export class ListViewComponent {
     this.source = Number.isNaN(s) ? undefined : s;
     let se = parseInt(this.route.snapshot.paramMap.get('series')!);
     this.series = Number.isNaN(se) ? undefined : se;
-
+    
+    this.setAboutLinkURL();
     this.getListStories(this.author, this.source, this.series);
     this.getGenreList();
     this.getRomanticList();
     this.getSexualityList();
     this.getExplicitList();
     this.getIntersectionality();
+  }
+  
+  setAboutLinkURL() : void {
+    const params = this.route.snapshot.params;
+    if(params['author'] || params['source'] || params['series']) {
+      this.aboutRoute = "../about"
+    }
   }
 
   getListStories(author?: number, source?: number, series?: number): void {
