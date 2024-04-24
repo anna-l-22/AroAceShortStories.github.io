@@ -10,7 +10,7 @@
         <a [routerLink]="aboutRoute" class="col-sm-6"><button class="btn btn-dark">About</button></a>
     </div></div>
 </div>
-<div *ngIf="!source && !series">
+<div *ngIf="!source && !series && !author">
     <div>
         <app-list-select class="justify-content-center row" [genres]="genres" [romantics]="romantics" [sexualitys]="sexualitys" [explicits]="explicits" 
         [intersectionalitys]="intersectionalitys" (filterItems)="filterStories($event)"></app-list-select>
