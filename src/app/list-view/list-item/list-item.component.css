@@ -17,3 +17,7 @@ a {
     border-color: purple;
     border-width: 3px;
 }
+
+.text-dark {
+    color: rgb(102, 110, 117);
+}

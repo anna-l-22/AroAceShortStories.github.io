@@ -10,3 +10,12 @@ body {
 h1 {
     text-align: center;
 }
+
+.underline {
+    border: solid 5px;
+    border-image: 
+    linear-gradient(
+      to right, rgb(28, 186, 28) 0%, purple 100%
+    ) 0 0 100% 0;
+    margin-bottom: 10px;
+}
