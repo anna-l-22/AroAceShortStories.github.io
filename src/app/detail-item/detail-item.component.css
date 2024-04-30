@@ -1,11 +1,12 @@
 .warning {
     margin: 5px;
+    font-weight: bold;
 }
 
 #description {
     margin: 10px;
     padding: 10px;
-    background-color: rgb(168, 174, 176);
+    background-color: #B4B9BB;
 }
 
 .description {

@@ -5,3 +5,38 @@
 .length {
     margin-left: 10px;
 }
+
+@media only screen and (min-width: 768px) { 
+    .margins {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ }
+@media only screen and (min-width: 992px) {
+    .margins {
+        margin-left: 20px;
+        margin-right: 20px
+}}
+
+.underline {
+    border: solid;
+    border-image: 
+    linear-gradient(
+      to right, purple 0%, rgb(28, 186, 28) 100%
+    ) 0 0 100% 0;
+    display: flex;
+    width: max-content;
+    margin-bottom: 16px;
+}
+
+.h2 {
+    border-bottom-width: 3px;
+}
+
+.h3 {
+    border-bottom-width: 2px;
+}
+
+h2, h3 {
+    margin: 0;
+}
