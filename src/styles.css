@@ -26,9 +26,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     color: white;
 }
 .Magical-Realism {
-    background-color: #A0AED9;
+    background-color: rgb(143, 167, 211);
 }
 .Dystopia {
-    background-color: B30000;
+    background-color: red;
     color: white;
 }
