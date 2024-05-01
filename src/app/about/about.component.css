@@ -25,7 +25,7 @@
       to right, purple 0%, rgb(28, 186, 28) 100% 
     ) 0 0 100% 0; 
     display: flex; 
-    width: max-content; 
+    width: fit-content; 
     margin-bottom: 16px;  
 }
 
