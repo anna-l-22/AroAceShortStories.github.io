@@ -81,7 +81,7 @@ export const STORIES: DataStory[] = [
         id: 13, title: "Before Crows' Eyes", author: 6, genres: [1], warnings: [1, 3, 5, 9], 
         link: "https://aroworlds.com/2022/02/21/fiction-before-crows-eyes/", series: 1, intersectionalities:[2,3], source: [1], 
         identities: [{romantic: 1, sexuality: 1, gender: 2, prominance: 1, explicit: 2}, {romantic: 1, sexuality: 4, gender: 2, prominance: 2, explicit: 2}],
-        description: "Aro-ace baker Even is happy with how he is, and initially pleases his sex-negative village. But his refusal to marry has opinion of him souring."
+        description: "Aro-ace baker Even is happy with how he is, and initially pleases his sex-negative village. But his refusal to marry has opinion of him souring." + "A side character is a trans man and implied to be Black."
     },
     { 
         id: 14, title: "The Cage and the Road", author: 6, genres: [1], warnings: [5, 9], link: "https://aroworlds.com/2022/02/24/fiction-the-cage-and-the-road/",
@@ -184,7 +184,8 @@ export const STORIES: DataStory[] = [
         id: 33, title: "Cinder", author: 16, warnings: [6, 2, 7, 15], genres: [1], source: [5], intersectionalities: [1], identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 1, prominance: 1}, 
             {sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 2}], 
         description: "Basically a disabled a-spec Cinderella retelling where the main character seeks to escape from an abusive family member and help others do the same. It’s a wild ride. " 
-        + "The side character is only implied to be aro ace, she’s described as being similar to the main character and confirmed not to want of all in love/have kids."
+        + "The side character is only implied to be aro ace, she’s described as being similar to the main character and confirmed not to want of all in love/have kids. " 
+        + "Intersectionality Note: the main character is a double leg amputee; the side character is blind."
     },
     {
         id: 34, title: "Seams of Iron", author: 17, genres: [1], source: [5], identities: [{sexuality: 3, romantic: 1, gender: 1, explicit: 2, prominance: 2}, {sexuality: 3, romantic: 1, gender: 1, explicit: 2, prominance: 1}], 
@@ -237,7 +238,7 @@ export const STORIES: DataStory[] = [
     {
         id: 44, title: "The Library Ghost", author: 27, warnings: [8, 17], genres: [3], source: [7], intersectionalities: [1,2], identities: [{sexuality: 1, romantic: 6, gender: 3, explicit: 2, prominance: 2}, 
          {sexuality: 1, romantic: 6, gender: 3, explicit: 2, prominance: 2}, {sexuality: 1, romantic: 6, gender: 2, explicit: 3, prominance: 2}], series: 2,
-         description: "A ghost tries to infiltrate a library that’s a base of operations for a rebel group in a dystopian city. (There’s a lot going on here)."
+         description: "A ghost tries to infiltrate a library that’s a base of operations for a rebel group in a dystopian city. (There’s a lot going on here). " + "Intersectionality note: anxiety" 
     },
     {
         id: 45, title: "Runtime", author: 27, warnings: [17], genres: [3], source: [7], intersectionalities: [1,2], series: 2,
@@ -246,11 +247,12 @@ export const STORIES: DataStory[] = [
     },
     {
         id: 46, title: "Come Home Alone", author: 27, warnings: [2, 10], genres: [3], source: [7], intersectionalities: [], identities: [{sexuality: 1, romantic:6 , gender: 2, explicit: 3, prominance: 2}], 
-        description: "Canon-adjacent story about a man in a city that’s falling apart saving another person from an evil government operation and a serious wound.", series: 2
+        description: "Canon-adjacent story about a man in a city that’s falling apart saving another person from an evil government operation and a serious wound. " + "Intersectionality note: anxiety", series: 2
     },
     {
-        id: 47, title: "Nkásht íí", author: 25, warnings: [16, 7], genres: [1, 4], link: "http://strangehorizons.com/fiction/nksht/", intersectionalities: [3], 
-        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}], description: "Two Indigenous girls that ran away from home solve a haunting. Character is only briefly implied to be a-spec."
+        id: 47, title: "Nkásht íí", author: 28, warnings: [16, 7], genres: [1, 4], link: "http://strangehorizons.com/fiction/nksht/", intersectionalities: [3], 
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}], description: "Two Indigenous girls that ran away from home solve a haunting. Character is only briefly implied to be a-spec. " 
+        + "Intersectionality note: the main character is Native American (implied Apache)."
     },
     {
         id: 48, title: "Surely You'll Drown Here if You Stay", author: 29, warnings: [2, 13], genres: [1, 4], link: "https://www.uncannymagazine.com/article/youll-surely-drown-stay/", intersectionalities: [], 
@@ -258,7 +260,7 @@ export const STORIES: DataStory[] = [
         + "This representation is controversial/has been criticized by some asexual reviewers", length:2
     },
     {
-        id: 49, title: "Anything Resembling Love", author: 30, warnings: [2], genres: [7], link: "https://reactormag.com/anything-resembling-love-s-qiouyi-lu/", 
+        id: 49, title: "Anything Resembling Love", author: 30, warnings: [13], genres: [7], link: "https://reactormag.com/anything-resembling-love-s-qiouyi-lu/", 
         intersectionalities: [3], identities: [{sexuality: 1, romantic: 4, gender: 1, explicit: 1, prominance: 2}], 
         description: "A first year university student explores her sexuality and learns to hide her discomfort (manifested in the form of centipedes emerging from her body) from men." 
         + " This is a powerful exploration of the effect of rape culture on university students."
@@ -277,23 +279,23 @@ export const STORIES: DataStory[] = [
         id: 52, title: "The Pride Conspiracy", author: 6, link: "https://aroworlds.com/2019/12/23/fiction-the-pride-conspiracy-part-one/",         
         identities: [{sexuality: 6, romantic: 7, gender: 2, explicit: 1, prominance: 1}, {sexuality: 1, romantic: 1, explicit: 1, prominance: 2, gender: 1}, 
             {sexuality: 3, romantic: 9, gender: 2, explicit: 1, prominance: 2}], source: [3,9,10], series: 3, warnings: [5,18], 
-        description: "Sequel to The Vampire Conundrum, Rowan deals with a gift exchange and anxiety about the holidays.", intersectionalities: [1,2], genres: [1]
+        description: "Sequel to The Vampire Conundrum, Rowan deals with a gift exchange and anxiety about the holidays. " + "Intersectionality note: the main character is a trans man and has anxiety", intersectionalities: [1,2], genres: [1]
     },
     { 
         id: 53, title: "Abrasive", author: 6, length: 3, series: 4, link: "https://aroworlds.com/2020/07/07/hallo-aro-abrasive-k-a-cook/", 
         source: [4,3,9], warnings: [5,7,14], genres: [1],
         intersectionalities: [2], identities: [{sexuality: 7, romantic: 1, gender: 1, explicit: 2, prominance: 1}], 
-        description: "Suki, a forthright allo aro woman, has to deal with her family looking down on her for turning down a romantic proposal from a sexual partner."
+        description: "Suki, a forthright allo aro woman, has to deal with her family looking down on her for turning down a romantic proposal from a sexual partner. " + "Intersectionality note: Suki is a trans woman."
     },
     { 
         id: 54, title: "The Complexity of Human Decency", author: 6, series: 4, source: [4,9], 
         link: "https://aroworlds.com/2020/07/14/fiction-the-complexity-of-human-decency/", genres: [1], 
         warnings: [5,7,14], identities: [{sexuality: 7, romantic: 1, gender: 1, explicit: 2, prominance: 1}, {sexuality: 3, romantic: 1, gender: 3, explicit: 2, prominance: 1}], 
-        description: "Suki left home to escape amatonormativity and goes to a rainy, capitalistic city.", intersectionalities: [2]
+        description: "Suki left home to escape amatonormativity and goes to a rainy, capitalistic city. " + "Intersectionality note: Suki is a trans woman.", intersectionalities: [2]
     }, //capitalism
     { 
         id: 55, title: "If Absurd Works", author: 6, link: "https://aroworlds.com/2020/08/04/fiction-if-absurd-works/", genres: [1], 
-        description: "Suki returns to her amatonormative home to visit her sick mother.",
+        description: "Suki returns to her amatonormative home to visit her sick mother. "  + "Intersectionality note: Suki is a trans woman",
         warnings: [5,7,19,14], intersectionalities: [2], 
         identities: [{sexuality: 7, romantic: 1, gender: 1, explicit: 2, prominance: 1}], series: 4, source: [4,9]
     },
@@ -304,19 +306,19 @@ export const STORIES: DataStory[] = [
     },
     { 
         id: 57, title: "When Quiver Meets Quill", author: 6, link: "https://aroworlds.com/2019/11/13/fiction-when-quiver-meets-quill-part-one/", genres: [1], warnings: [14,15],
-        description: "An aromantic shop owner deals with hir coworker trying to set hir up on a date.", intersectionalities: [1,2], source: [3,10],
+        description: "An aromantic shop owner deals with hir coworker trying to set hir up on a date. " + "Intersectionality note: Both characters are autistic.", intersectionalities: [1,2], source: [3,10],
         identities: [{sexuality: 3, romantic: 1, gender: 3, explicit: 1, prominance: 1},{sexuality: 3, romantic: 1, gender: 2, explicit: 1, prominance: 2}]
     },
     { 
         id: 58,title: "The Sorcerous Compendium of Postmortem Query", author: 6, link: "https://aroworlds.com/marchverse/mara-and-esher-hill/the-sorcerous-compendium-of-postmortem-query/", genres: [1], intersectionalities: [2],
-        series: 4, source: [3,10], description: "A lithromantic girl seeks advice from the ghosts of members of her community who have died.", warnings: [5,15], length:2,
+        series: 4, source: [3,10], description: "A lithromantic girl seeks advice from the ghosts of members of her community who have died. " + "Intersectionality note: The main character is a trans woman and one of the side characters is a trans man.", warnings: [5,15], length:2,
         identities: [{romantic: 10, sexuality: 8, gender: 1, explicit: 2, prominance: 1},{sexuality: 6, romantic: 1, gender: 1, explicit: 2, prominance: 2},{sexuality: 3, romantic: 2, gender: 1, explicit: 2, prominance: 2},
         {sexuality:1, romantic: 1, gender: 2, explicit: 2,  prominance: 2},{romantic: 7, sexuality: 3, gender: 2, explicit: 2, prominance: 2},
         {sexuality: 3, romantic: 11, gender: 3, explicit: 2, prominance: 2},{sexuality: 1, romantic:1, gender:2,explicit:2,prominance:2}]
     },
     { 
         id: 59, title: "The Mundane Progression of Premortem Colloquy", author: 6, link: "https://aroworlds.com/marchverse/mara-and-esher-hill/the-mundane-progression-of-premortem-colloquy/", source: [3], series: 4,
-        description: "A lithromantic girl and her autistic girlfriend have a conversation about their relationship.", warnings: [5,15], genres: [1], intersectionalities: [1,2], 
+        description: "A lithromantic girl and her autistic girlfriend have a conversation about their relationship. " + "Intersectionality note: The main character is a trans woman; the side character is autistic and has coeliac disease.", warnings: [5,15], genres: [1], intersectionalities: [1,2], 
         identities: [{sexuality: 8, romantic: 10, gender: 1, explicit: 2, prominance: 1},{sexuality: 8, romantic: 12, gender:1,explicit:2,prominance:2}]
     },
     { 
@@ -333,13 +335,14 @@ export const STORIES: DataStory[] = [
     { 
         id: 62, title: "What If It Isn’t", author: 6, link: "https://aroworlds.com/2018/08/01/what-if-it-isnt-k-a-cook/", warnings: [], 
         identities: [{sexuality: 4, romantic: 13, gender: 1, explicit: 1, prominance: 1}],
-        description: "Two girls visit a museum and have a conversation about their relationship.", 
+        description: "Two girls visit a museum and have a conversation about their relationship. " + "Intersectionality note: the main character is autistic.", 
         intersectionalities: [1], genres: [5], source: [3,10]
     },
     { 
         id: 63, title: "What Makes Us Human", author: 6, link: "https://aroworlds.com/marchverse/mara-and-esher-hill/what-makes-us-human/", 
         series: 4, source: [3,9], warnings: [5,15], genres: [1],
-        description: "An autistic, loveless aro priest struggles with giving advice to a guest that dehumanizes them.", intersectionalities: [1,2], length:2,
+        description: "An autistic, loveless aro priest struggles with giving advice to a guest that dehumanizes them. " 
+        + "The main character is autistic, the side character is a trans woman (although not obviously from this story) and has chronic pain from arthritis.", intersectionalities: [1,2], length:2,
         identities: [{sexuality: 3, romantic:1, gender:3, explicit: 1, prominance: 1},{sexuality: 4, romantic: 1, gender: 1, explicit: 3, prominance: 2}]
     },
     { 
@@ -348,30 +351,30 @@ export const STORIES: DataStory[] = [
         identities: [{sexuality: 7, romantic: 1, gender: 1, explicit: 1, prominance: 1},{sexuality: 3, romantic: 1, gender: 3, explicit: 1, prominance: 2},
             {sexuality: 8, romantic: 10, gender:1, explicit: 1, prominance:2},{sexuality: 1, romantic: 1, gender: 2, explicit: 1, prominance: 2}],             
         description: 'This is about a guiding priest struggling with the expectations and needs of members of her aromantic community ' 
-        + 'and dealing with the pain of being so old before learning the term “aromantic”.'        
+        + 'and dealing with the pain of being so old before learning the term “aromantic”. ' + 'Intersectionality note: the main character has chronic pain from arthritis and is a trans woman, the male side character is a trans man and has depression, and the nonbinary side character is autistic."
     },
     { 
         id: 65, title: "Lucky", author: 6, link: "https://aroworlds.com/2019/02/20/hallo-aro-lucky-k-a-cook/", length: 3, warnings: [5,14], 
         genres: [5], intersectionalities: [],
-        description: "An aro allo man deals with being told how lucky he is for being aromantic by someone who doesn’t understand the first thing about arophobia and amatonormativity.",
+        description: "An aro allo man deals with being told how lucky he is for being aromantic by someone who doesn’t understand the first thing about arophobia and amatonormativity. " + "Intersectionality note: the main character is a trans man and has depression",
         identities: [{sexuality: 8, romantic: 1, gender: 2, explicit: 1, prominance: 1}], source: [3,4,10]
     },
     { 
         id: 66, title: "Love is the Reckoning", author: 6, link: "https://aroworlds.com/2020/09/01/fiction-love-is-the-reckoning/", length: 2, 
         genres: [1], intersectionalities: [1,2], series: 4, source: [9], warnings: [4,14,21,22], 
-        description: "After a suicide attempt, Esher left his home town to visit a monastery for treatment. Now, Esher returns at his sister’s request.",
+        description: "After a suicide attempt, Esher left his home town to visit a monastery for treatment. Now, Esher returns at his sister’s request. " + "The main character is an autistic trans man.",
         identities: [{sexuality: 1, romantic: 9, gender: 2, explicit: 1, prominance: 1},{sexuality: 1, romantic: 1, gender: 1, explicit: 1, prominance: 2},
             {sexuality: 8, romantic: 10, gender: 1, explicit: 1, prominance: 2}]
     },
     { 
         id: 67, title: "Ringbound", author:6, link: "https://aroworlds.com/marchverse/kit-and-amelia-march/ringbound/", 
-        description: "A man has doubts the night before his wedding.", genres: [1], series: 4,
+        description: "A man has doubts the night before his wedding. " + "Intersectionality note: the main character is an autistic trans man.", genres: [1], series: 4,
         source: [3,9], warnings: [5,14], intersectionalities: [1,2], identities: [{sexuality: 8, romantic: 1, explicit: 2, gender: 2, prominance: 1}]
     },
     { 
         id: 68, title: "Absence of Language", author: 6, link: "https://aroworlds.com/marchverse/kit-and-amelia-march/absence-of-language/", 
         series: 4, warnings: [18,9,23,24], source: [3,9], length: 2, genres: [1],
-        description: "A regretful gay aro man is given the words he need to put his experiences in context.", intersectionalities: [1,2], 
+        description: "A regretful gay aro man is given the words he need to put his experiences in context. " + "Both characters are trans men, the main character is autistic.", intersectionalities: [1,2], 
         identities: [{sexuality: 8, romantic: 1, gender: 2, explicit: 1, prominance: 1},{sexuality: 1, romantic: 13, gender: 2, explicit: 1, prominance: 2}]
     },
     { 
@@ -383,7 +386,7 @@ export const STORIES: DataStory[] = [
     { 
         id: 70, title: "Love Spells, Rainbows and Rosie", author: 6, link: "https://aroworlds.com/2020/09/22/fiction-love-spells-rainbows-and-rosie/", 
         series: 4, genres: [1], warnings: [4,14], 
-        description: "A witch shopkeeper deals with a fantasy version of Valentine’s Day coming up.", intersectionalities: [2], 
+        description: "A witch shopkeeper deals with a fantasy version of Valentine’s Day coming up. " + "The main character is a trans woman, although it is not specified in this story.", intersectionalities: [2], 
         identities: [{sexuality: 8, romantic: 10, gender: 1, explicit: 1, prominance: 1}]
     },
     { 
@@ -423,5 +426,70 @@ export const STORIES: DataStory[] = [
         identities: [{gender: 6, sexuality: 1, romantic: 1, prominance: 1, explicit: 1},{gender: 2, sexuality: 1, romantic: 1, prominance: 1, explicit: 1}], 
         description: "Rin moves into a new flat just as the alien invasion arrives. But something is odd about their new flatmates... " 
         + "Rin has tinitus and dyslexia, and another character has a sensory processing disorder."
-    }
+    },
+    {
+        id: 78, title: "How To Love A Sidewinder", author: 34, warnings: [14], genres: [7], source: [12], 
+        intersectionalities: [3], identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 1, prominance: 1}], 
+        description: "* A Chinese girl comes out to her mother after a friend cursed her to spit up snakes every time she is misleading or says a half truth. " + "Intersectionality note: Chinese."
+    },
+  {
+       id: 79, title: "Across the Stars", author: 35, warnings: [11], genres: [3], source: [12], intersectionalities: [], 
+       identities: [{sexuality: 1, romantic: 6, gender: 1, explicit: 1, prominance: 1}], 
+       description: "A girl turns 17 and must overcome her fear of traveling and process her grief over loosing her parents. (Note: labels used here for the sake of searching on the database, but this character does not overly like labels.)"
+  },
+  {
+        id: 80, title: "Well Suited", author: 18, warnings: [27, 14, 32], genres: [1], source: [12], intersectionalities: [2], 
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}, {sexuality: 1, romantic: 1, gender: 6, explicit: 2, prominance: 1}], 
+        description: "A girl’s father becomes a knight, meaning she now needs to debut in royal society, meanwhile, she’d rather hang out with her friend who is trying to become a magister."
+  },
+  {
+        id: 81, title: "Nylon Bed Socks", author: 36, length: 4,warnings: [28, 1, 3, 4, 7, 8, 13, 15, 33], genres: [5], source: [12], intersectionalities: [1], 
+        identities: [{sexuality: 1, romantic: 3, gender: 1, explicit: 1, prominance: 1}, {sexuality: 1, romantic: 3, gender: 2, explicit: 1, prominance: 2}], 
+        description: "A girl (or girls) struggles with mental illness and the trauma she’s experienced in a psych ward. This is a dark but thoughtful depiction of asexuality and how it can intersect with trauma. Intersectionality note: Dissociative Identity Disorder, eating disorder"
+  },
+  {
+        id: 82, title: "Give up the Ghost", author: 37, warnings: [11, 1, 29, 21], genres: [1, 9], source: [12], intersectionalities: [], identities: [{sexuality: 1, romantic: 3, gender: 1, explicit: 1, prominance: 1}], 
+        description: "A girl escorts people to a cemetery where they can talk to the dead. Meanwhile, she tries to determine who killed her friend."
+  },
+  {     
+        id: 83, title: "No Such Thing as Just", author: 40, warnings: [23, 3, 7, 1, 18], genres: [5], source: [12], intersectionalities: [2], 
+        identities: [{sexuality: 1, romantic: 8, gender: 3, explicit: 1, prominance: 1}], description: "Halcion is in a romantic relationship that their drag queen friend views as toxic."
+  },
+  {
+        id: 84, title: "Smells Like Teen Virgin", author: 38, warnings: [30, 1, 2], genres: [1], source: [12], intersectionalities: [], 
+        identities: [{sexuality: 1, romantic: 4, gender: 1, explicit: 1, prominance: 1}, {sexuality: 2, romantic: 5, gender: 1, explicit: 1, prominance: 2}], 
+        description: "Artemis is a Slayer, a human with powerful abilities to hunt monsters. Unfortunately virgin Slayer blood smells great to monsters, especially as the Slayer gets older. Artemis must either have sex, attract a constant stream of monsters, or figure out a different way. (Note, the side character is questioning if ace or demi, put under demi tag for simplicity"
+  },
+  {
+        id: 85, title: "Moonspirited:", author: 39, warnings: [14], genres: [3, 1], source: [12], intersectionalities: [3], 
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}, {sexuality: 1, romantic: 1, gender: 3, explicit: 2, prominance: 1}], 
+        description: "A girl’s sister is kidnapped by the gods, and she will do anything to get her sister back.  Intersectionality note: both characters Japanese inspired, side character nonbinary coded due to non-human nature"
+  },
+  {
+        id: 86, title: "The Third Star", author: 27, warnings: [2], genres: [3], source: [12], intersectionalities: [1, 2], 
+        identities: [{sexuality: 1, romantic: 1, gender: 6, explicit: 1, prominance: 1}], 
+        description: "Orion and zir queer platonic partners are trapped in a spaceship after escaping a cosmic entity that attacked the space station they were on. Intersectionality Note: autistic"
+  },
+  {
+        id: 87, title: "The Mermaid's Sister", author: 41, warnings: [2, 14], genres: [1], source: [12], intersectionalities: [], 
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}], 
+        description: "A Little Mermaid retelling from the point of view of Ariel’s sister, who is determined to get Ariel back. "
+  },
+  {
+        id: 88, title: "The Hazards of Pressing Play", author: 42, warnings: [6, 15, 31], genres: [10], source: [12], intersectionalities: [2, 3], 
+        identities: [{sexuality: 1, romantic: 6, gender: 1, explicit: 1, prominance: 1}, {sexuality: 1, romantic: 5, gender: 1, explicit: 1, prominance: 2}, {sexuality: 1, romantic: 4, gender: 2, explicit: 1, prominance: 2], 
+        description: "Violet’s girlfriend is kidnapped, and Violet must find her before it is too late. Intersectionality Note: Main character is a wheelchair user and has spastic cerebral palsy and hyperacusis. Male side character is Egyptian-American"
+  },
+  {
+        id: 89, title: "The Witch of Festa Falls", author: 43, warnings: [14, 11, 29, 22], genres: [1, 11], source: [12], intersectionalities: [], 
+        identities: [{sexuality: 1, romantic: 1, gender: 1, explicit: 2, prominance: 1}], description: "A girl in 1730s Norway must find the being that killed her cousin."
+  },
+  {
+        id: 90, title: "The Shimmering Prayer of Sûkiurâq", author: 44, intersectionalities: [2], genres: [1], length: 1, warnings: [2, 16], 
+        identities: [{gender: 3, sexuality: 6, romantic: 1, prominance: 1, explicit: 2}], description: "A teen wants to become a magical dancer."
+  }
+  
+
+
+  
  ]
