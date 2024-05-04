@@ -351,7 +351,7 @@ export const STORIES: DataStory[] = [
         identities: [{sexuality: 7, romantic: 1, gender: 1, explicit: 1, prominance: 1},{sexuality: 3, romantic: 1, gender: 3, explicit: 1, prominance: 2},
             {sexuality: 8, romantic: 10, gender:1, explicit: 1, prominance:2},{sexuality: 1, romantic: 1, gender: 2, explicit: 1, prominance: 2}],             
         description: 'This is about a guiding priest struggling with the expectations and needs of members of her aromantic community ' 
-        + 'and dealing with the pain of being so old before learning the term “aromantic”. ' + 'Intersectionality note: the main character has chronic pain from arthritis and is a trans woman, the male side character is a trans man and has depression, and the nonbinary side character is autistic."
+        + 'and dealing with the pain of being so old before learning the term “aromantic”. ' + 'Intersectionality note: the main character has chronic pain from arthritis and is a trans woman, the male side character is a trans man and has depression, and the nonbinary side character is autistic.'
     },
     { 
         id: 65, title: "Lucky", author: 6, link: "https://aroworlds.com/2019/02/20/hallo-aro-lucky-k-a-cook/", length: 3, warnings: [5,14], 
@@ -477,7 +477,7 @@ export const STORIES: DataStory[] = [
   },
   {
         id: 88, title: "The Hazards of Pressing Play", author: 42, warnings: [6, 15, 31], genres: [10], source: [12], intersectionalities: [2, 3], 
-        identities: [{sexuality: 1, romantic: 6, gender: 1, explicit: 1, prominance: 1}, {sexuality: 1, romantic: 5, gender: 1, explicit: 1, prominance: 2}, {sexuality: 1, romantic: 4, gender: 2, explicit: 1, prominance: 2], 
+        identities: [{sexuality: 1, romantic: 6, gender: 1, explicit: 1, prominance: 1}, {sexuality: 1, romantic: 5, gender: 1, explicit: 1, prominance: 2}, {sexuality: 1, romantic: 4, gender: 2, explicit: 1, prominance: 2}], 
         description: "Violet’s girlfriend is kidnapped, and Violet must find her before it is too late. Intersectionality Note: Main character is a wheelchair user and has spastic cerebral palsy and hyperacusis. Male side character is Egyptian-American"
   },
   {
